@@ -1,0 +1,66 @@
+\doxysection{Bruch testen}
+\hypertarget{group___group_name}{}\label{group___group_name}\index{Bruch testen@{Bruch testen}}
+
+
+Dieses Modul enthält die Dokumentation für das Bruch-\/\+Testsystem.  
+
+
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_bruch}{Bruch}}
+\begin{DoxyCompactList}\small\item\em This is a class which represents a fracture. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Dieses Modul enthält die Dokumentation für das Bruch-\/\+Testsystem. 
+
+Dieses Modul bietet eine Dokumentation für die Bruchklasse und die dazugehörigen Tests.
+
+
+\begin{DoxyItemize}
+\item \doxysectlink{group___group_name_BruchKlasse}{Bruchklasse}{1}
+\begin{DoxyItemize}
+\item \doxysectlink{group___group_name_Konstruktor}{Konstruktor}{2}
+\item \doxysectlink{group___group_name_GetValue}{Wert abrufen}{2}
+\item \doxysectlink{group___group_name_Multiply}{Multiplikation}{2}
+\end{DoxyItemize}
+\item \doxysectlink{group___group_name_Testklasse}{Testklasse}{1}
+\begin{DoxyItemize}
+\item \doxysectlink{group___group_name_RunTests}{Tests ausführen}{2}
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{group___group_name_BruchKlasse}{}\doxysubsection{\texorpdfstring{Bruchklasse}{Bruchklasse}}\label{group___group_name_BruchKlasse}
+Die Bruchklasse repräsentiert eine einfache Bruchzahl.\hypertarget{group___group_name_Konstruktor}{}\doxysubsubsection{\texorpdfstring{Konstruktor}{Konstruktor}}\label{group___group_name_Konstruktor}
+Der Konstruktor erzeugt eine Bruchinstanz mit einem gegebenen Zähler und Nenner.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_bruch}{Bruch}}(\textcolor{keywordtype}{int}\ numerator,\ \textcolor{keywordtype}{int}\ denominator);}
+
+\end{DoxyCode}
+\hypertarget{group___group_name_GetValue}{}\doxysubsubsection{\texorpdfstring{Wert abrufen}{Wert abrufen}}\label{group___group_name_GetValue}
+Die Methode {\ttfamily get\+Value} gibt den Wert des Bruchs als Fließkommazahl zurück.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{double}\ getValue()\ \textcolor{keyword}{const};}
+
+\end{DoxyCode}
+\hypertarget{group___group_name_Multiply}{}\doxysubsubsection{\texorpdfstring{Multiplikation}{Multiplikation}}\label{group___group_name_Multiply}
+Die Methode {\ttfamily multiply} ermöglicht die Multiplikation dieses Bruchs mit einem anderen \doxylink{class_bruch}{Bruch}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_bruch}{Bruch}}\ multiply(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_bruch}{Bruch}}\&\ other)\ \textcolor{keyword}{const};}
+
+\end{DoxyCode}
+\hypertarget{group___group_name_Testklasse}{}\doxysubsection{\texorpdfstring{Testklasse}{Testklasse}}\label{group___group_name_Testklasse}
+Die Testklasse enthält Tests für die Bruchklasse.\hypertarget{group___group_name_RunTests}{}\doxysubsubsection{\texorpdfstring{Tests ausführen}{Tests ausführen}}\label{group___group_name_RunTests}
+Die Methode {\ttfamily run\+Tests} führt Tests für die Bruchklasse aus und gibt das Ergebnis aus.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ runTests();}
+
+\end{DoxyCode}
+ 

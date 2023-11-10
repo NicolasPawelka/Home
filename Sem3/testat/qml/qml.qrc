@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>KaffeeModel.qml</file>
+        <file>Main.qml</file>
+        <file>kaffee.jpg</file>
+        <file>espresso.jpg</file>
+        <file>espressomacchiato.jpg</file>
+        <file>cappuccino.jpg</file>
+        <file>Delegate.qml</file>
+    </qresource>
+</RCC>

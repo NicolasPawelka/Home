@@ -1,0 +1,88 @@
+[
+	{
+        "forename": "Hans",
+        "name": "Mayer",
+        "course": "TIB",
+        "age": 22,
+        "matriculationNumber": 942538,
+        "image": "Mann.png",
+        "semester": 3,
+        "modules": [
+			{
+			"name": "Mathematik 3",
+			"identificationCode": "MA3",
+			"severity": "easy",
+			"lernenGroup": "no"			
+			},{
+			"name": "Signale und Systeme",
+			"identificationCode": "SS",
+			"severity": "easy",
+			"lernenGroup": "no"			
+			},{
+			"name": "Elektronische Schaltungen",
+			"identificationCode": "ES",
+			"severity": "easy",
+			"lernenGroup": "no"			
+			},{
+			"name": "Digital- und Mikrocomputertechnik",
+			"identificationCode": "DMC",
+			"severity": "easy",
+			"lernenGroup": "no"			
+			},{
+			"name": "Softwareentwicklungsmethoden und Tools",
+			"identificationCode": "SET",
+			"severity": "easy",
+			"lernenGroup": "no"			
+			},{
+			"name": "Bildgebende Verfahren in der Medizin",
+			"identificationCode": "SET",
+			"severity": "easy",
+			"lernenGroup": "no"			
+			}			
+			]
+	},{
+        "forename": "Verena",
+        "name": "Kaiser",
+        "course": "MTB",
+        "age": 24,
+                "matriculationNumber": 212666,
+        "image": "Frau.png",
+		"semester": 3,
+		"modules": [ 	
+			{
+			"name": "Mathematik 3",
+			"identificationCode": "MA3",
+			"severity": "easy",
+			"lernenGroup": "yes"			
+			},{
+			"name": "Signale und Systeme",
+			"identificationCode": "SS",
+			"severity": "easy",
+			"lernenGroup": "no"			
+			},{
+			"name": "Elektronische Schaltungen",
+			"identificationCode": "ES",
+			"severity": "easy",
+			"lernenGroup": "no"			
+			},{
+			"name": "Digital- und Mikrocomputertechnik",
+			"identificationCode": "DMC",
+			"severity": "easy",
+			"lernenGroup": "no"			
+			},{
+			"name": "Softwareentwicklungsmethoden und Tools",
+			"identificationCode": "SET",
+			"severity": "difficult",
+			"lernenGroup": "no"			
+			},{
+			"name": "Bildgebende Verfahren in der Medizin",
+			"identificationCode": "SET",
+			"severity": "easy",
+			"lernenGroup": "no"			
+			}			
+			]
+	}
+]
+
+
+

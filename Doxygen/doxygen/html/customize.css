@@ -1,0 +1,716 @@
+/* In diesem CSS File können sie verschiedene Paramter wie bspw. Farben oder Abstände 
+personalisieren. Alle Änderungen welche nicht im angegbenen Bereich vorgenommen werden
+geschehene auf eigenes Risiko */
+
+
+html {
+    /* Beginn des anpassbaren Bereichs */
+    /* ################################################################################ */
+    /* LIGHT MODE*/
+
+    /* Basis Einstellungen */
+
+    --page-background-color: white;
+    --page-foreground-color: black;
+    --page-link-color: black;
+    --visited-link-color: orange;
+
+    /* Inhalt */
+
+    --doc-content-margin-left: 10%;
+    --doc-content-margin-right: 10%;
+
+    /* Member Definitionen */
+
+    --member-def-background-color: #005da2;
+    --member-def-color: white;
+    --member-def-title-background: #005da2;
+    --member-def-title-color: white;
+
+    /* Seiten Navigation */
+
+    --side-nav-color: #006BAF;
+    --side-nav-background-image: url('../images/background.png');
+    --side-nav-selected-box-shadow: inset 4px 0 0 0 white;
+    --side-nav-margin-top: 50px;
+    --side-nav-margin-left: 25px;
+    --links-contents-size: 15px;
+
+    /* Projectbrief Creating Safety with passion */
+
+    --projectbrief-left: 20px;
+    --projectbrief-top: 88px;
+    --projectbrief-font-size: 15px;
+
+    --nav-path-bottom: 0;
+    --nav-path-right: 0;
+    --nav-path-left: 250px;
+
+    /* Projectlogo NewTec */
+
+    --projectlogo-image-width: 50%;
+    --projectlogo-image-height: 50%;
+    --projectlogo-image-margin-left: 5px;
+    --projectlogo-image-margin-bottom: 25px;
+
+    /* Titlearea = Area behind NewTec Logo 
+    !CAUTION! TITLEAREA IS FIXED FROM POSITIONING*/
+
+    --titlearea-left: 0;
+    --titlearea-width: 256px;
+    --titlearea-border-color: 5px solid white;
+    --titlearea-background-image : url('../images/titlearea_background.png');
+
+    /* Header */
+
+    --header-background-color: transparent;
+    --header-background-image: none;
+    --header-height: 90px;
+    --headertitle-font-size: 20px;
+    --headertitle-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --headertitle-padding-top: 50px;
+
+    /* Special Button */
+
+    --darkmode-button-image: url('../images/Copy_to_clipboard.svg');
+    --edit-button-image: url('../images/pencil.svg');
+    --both-button-on-hover-filter: blur(0.25px);
+    --both-button-on-hover-opacity: 0.25;
+
+    /* Result Window */
+
+    --result-window-background-color: white;
+    --result-window-radius: 0px;
+    --result-background-color: #757777;
+    --result-radius: 0px;
+
+    /* Note Field */
+
+    --note-background-color: #FFA500;
+
+    /* warning field */
+
+    --warning-background-color: #DC143C;
+    --warning-border-color: #990000;
+
+    /* deprecated field */
+
+    --deprecated-background-color: #999999;
+
+    /* Bug Field */
+
+    --bug-background-color: #6495ED;
+    --bug-border-color: #0000FF;
+
+    /* Invariant Field */
+
+    --invariant-background-color: #90EE90;
+
+    /* precondition */
+
+    --pre-background-color: #008000;
+
+    /* postcondition */
+
+    --post-background-color: #006400;
+
+    /* todo */
+
+    --todo-background-color: #BF7FFF;
+    --todo-border-color: #8A2BE2;
+
+    /* remark */
+
+    --remark-background-color: #FFA500;
+
+     /* Class List directory */
+
+     --class-list-background-color-odd:white;
+     --class-list-background-color-even:#F8F9FC;
+     --class-list-color:black;
+
+     /* Class Index */
+
+     --class-index-background-color-odd:#F8F9FC;
+     --class-index-background-color-even: white;
+     --class-index-letter:black;
+     --class-index: black;
+
+
+    /* DARK MODE */
+
+    /* Basis Einstellungen */
+
+    --page-background-dark: #0C2C40;
+
+    /* Special Button */
+
+    --both-button-filter-on-dark: invert(1);
+
+    /* Member Definitionen */
+
+    --member-def-dark-background: black;
+    --member-def-title-dark-background: black;
+
+    --projectnumber-color: black;
+    --slogan-color:black;
+
+    /* Class List directory */
+
+    --class-list-dark-background-color-odd:#757777;
+    --class-list-dark-background-color-even:black;
+    --class-list-dark-color:white;
+
+    /* Class Index */
+
+    --class-index-dark-background-color-odd:#757777;
+    --class-index-dark-background-color-even:black;
+    --class-index-dark-letter:white;
+    --class-index-dark:white;
+
+    /* ################################################################################ */
+     /* Ende des anpassbaren Bereichs */
+}
+
+/* ######### Extra Fields ######### */
+/* SearchWindow */
+.SREntry {
+    background-color: #757777;
+}
+
+.SRStatus {
+    background-color: #757777;
+    color: white;
+}
+
+.SRSymbol {
+    color: white;
+}
+
+a.SRScope {
+    color: white;
+}
+
+/* Code Fragments */
+div.fragment {
+    filter: invert(0);
+    background-image: none;
+    background-color: white;
+    border: 3px solid var(--fragment-border-color);
+}
+
+div.line {
+    min-height: 12px;
+}
+
+/* warning field */
+dl.warning {
+    background-color: var(--warning-background-color);
+    border-color: var(--warning-border-color);
+    margin-right: 9px;
+    margin-left: 4px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Note field */
+dl.note {
+    background-color: var(--note-background-color);
+    margin-right: 9px;
+    margin-left: 4px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+dl.deprecated {
+    background-color: var(--deprecated-background-color);
+    margin-right: 9px;
+    margin-left: 4px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Bug Field */
+
+dl.bug {
+    background-color: var(--bug-background-color);
+    border-color: var(--bug-border-color);
+    margin-right: 9px;
+    margin-left: 4px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Invariant */
+
+dl.invariant {
+    background-color: var(--invariant-background-color);
+    margin-right: 9px;
+    margin-left: 4px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* precondition */
+
+dl.pre {
+    background-color: var(--pre-background-color);
+    margin-right: 9px;
+    margin-left: 4px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* postcondition */
+
+dl.post {
+    background-color: #006400;
+    margin-right: 9px;
+    margin-left: 4px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* todo */
+
+dl.todo {
+    background-color: var(--todo-background-color);
+    border-color: var(--todo-border-color);
+    margin-right: 9px;
+    margin-left: 4px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* remarks */
+
+dl.remark {
+    background-color: var(--remark-background-color);
+    margin-right: 9px;
+    margin-left: 4px;
+    border-radius: 5px;
+    padding: 5px;
+}
+/* ######### Extra Fields ######### */
+
+/* ######### Searchbar ######### */
+
+.topnav{
+    visibility: hidden;
+    overflow: hidden;
+}
+.topnav a{
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active{
+    background-color: #2196F3;
+    color: white;
+}
+
+.topnav input[type=text]{
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 60px;
+    font-size: 17px;
+    border-radius: 20px;
+}
+
+/* ######## Searchbar ######## */
+
+/* ######## Searchbox ######## */
+
+#searchbox {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 30px;
+    font-size: 15px;
+    padding: 1px;
+    padding-left: 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-top: 125px;
+    margin-left: calc((250px - 200px)/2);
+    background-color: white;
+    color: black;
+}
+
+#MSearchBox {
+    position: fixed;
+    left: 0;
+    top: 125px;
+    margin-left: 25px;
+    width: 200px;
+    height: 30px;
+    font-size: 15px;
+    padding: 1px;
+    padding-left: 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: black;
+    background-color: white;
+    box-shadow: none;
+}
+
+#MSearchField {
+    width: 200px;
+    height: 30px;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+#MSearchSelect {
+    padding-bottom: 20px;
+    filter: invert(0);
+}
+
+#MSearchResultsWindow {
+    position: fixed;
+    background-color: var(--result-window-background-color);
+    border-radius: var(--result-window-radius);
+    margin-top: 10px;
+    animation: ease-out 280ms slideInSearchResults;
+    border-radius: 20px;
+}
+
+#MSearchResults {
+    border-radius: var(--result-radius);
+    padding: 5px;
+    background-color: var(--result-background-color);
+}
+
+/* ####### Searchbox ######## */
+
+/* ####### Copy and edit Button ######## */
+
+.button {
+    background-size: 25px 20px;
+    background-color: transparent;
+    background-image:var(--darkmode-button-image) ;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    filter: invert(0);
+    z-index: 1;
+}
+
+.editButton {
+    background-image:var(--edit-button-image);
+    color: white;
+    border-color: transparent;
+    padding: 5px 10px;
+    cursor: pointer;
+    height: 20px;
+}
+
+.fragment {
+    position: relative;
+}
+
+.editButton, .copyButton {
+    position: absolute;
+    top: 5px;
+    transition: background-image 1s;
+}
+
+.copyButton {
+    right: 5px;
+}
+
+.editButton {
+    right: 40px; 
+}
+
+.editButton:hover, .copyButton:hover {
+    filter:var(--both-button-on-hover-filter);
+    opacity: var(--both-button-on-hover-opacity);
+    transition: filter 0.3s, opacity 0.3s;
+}
+
+.PdfButton{
+    position: absolute;
+    top:5px;
+    right:250px;
+}
+/* ######## Copy and Edit Button ######## */
+
+/* ######## NT Style specific variables */
+
+#side-nav{
+	position: fixed;
+	background-color: #0075BF;
+	padding-top: 120px;
+	color: var(--side-nav-color);
+	z-index: 1;
+	background-image: var(--side-nav-background-image);
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	
+}
+ #nav-tree{
+	background-color: transparent;
+ }
+ #nav-tree .selected{
+	text-shadow: none;
+	background-image: none;
+	background-color: transparent;
+	box-shadow:var(--side-nav-selected-box-shadow) ;
+ }
+
+ #nav-tree-contents{
+	margin-top:var(--side-nav-margin-top);
+	margin-left:var(--side-nav-margin-left);
+ }
+
+#nav-sync{
+	 visibility: hidden; 
+}
+
+#projectname{
+	visibility: hidden;
+	position: absolute;
+	width:max-content;
+	text-align: center;
+	left:90px;
+	top:90px;
+	margin-left: auto;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#projectbrief{
+    visibility: hidden;
+	position: fixed;
+    left:var(--projectbrief-left);
+    top:var(--projectbrief-top);
+	font-size: var(--projectbrief-font-size);
+    font-weight: bold;
+}
+
+
+#main-menu{
+	  background-color: transparent;
+}
+
+.sm-dox{
+	background-image: none;
+}
+
+.sm-dox a{
+	visibility: hidden;
+}
+
+.has-submenu{
+	visibility: hidden;
+}
+
+.ui-resizable-handle.ui-resizable-e{
+	 visibility: hidden;
+}
+
+#main-nav{
+    height:0px;
+}
+
+#nav-path{
+	/* visibility: hidden; */
+	background-color: transparent;
+	position: fixed;
+	bottom:var(--nav-path-bottom);
+	right:var(--nav-path-right);
+	left:var(--nav-path-left);
+	z-index: 0;
+}
+
+.ui-resizable.side-nav-resizable{
+	position: absolute;
+	height:100%;
+	top:0;
+	bottom: 0;
+    width: 250px !important;
+}
+
+#projectlogo img{
+	width:var(--projectlogo-image-width);
+	height:var(--projectlogo-image-height);
+	margin-left: var(--projectlogo-image-margin-left);
+	margin-bottom: var(--projectlogo-image-margin-bottom);
+	
+}
+ 
+ #titlearea{
+	position: fixed;
+	left:var(--titlearea-left);
+	width:var(--titlearea-width);
+	border-color: var(--titlearea-border-color);
+    background-image: var(--titlearea-background-image);
+ }
+#top{
+	position: fixed;
+	right: 0;
+	top: 0;
+	left:0;
+	z-index: 2;
+}
+
+.arrow{
+	color: white;
+}
+
+/*Larger navigation contents*/
+a{
+	font-size: var(--links-contents-size);
+}
+
+.qindex{
+	color: black;
+}
+
+.mlabel{
+    background-color:#FF6600  !important;
+}
+
+.memproto {
+	border-bottom: 1px solid white;
+	text-shadow: none;
+	color:var(--member-def-color);
+}
+
+.memname td{
+color: white;
+}
+
+.memtitle{
+	background-color: var(--member-def-title-background);
+	color:var(--member-def-title-color);
+}
+
+.memdoc{
+	padding:20px;
+
+}
+
+.directory .desc{
+	color:black;
+}
+
+.navpath ul{
+	background-image: none;
+	border:none;
+}
+
+.navelem{
+	visibility: hidden;
+}
+
+#ProjectNumber{
+	position: fixed;
+	left:260px;
+	bottom:0;
+	background-color: transparent;
+	border: none;
+}
+
+div.contents{
+	margin-left: var(--doc-content-margin-left);
+	margin-right: var(--doc-content-margin-right);
+}
+
+
+div.header{
+	background-color: var(--header-background-color);
+	background-image: var(--header-background-image);
+	height: var(--header-height);
+}
+
+div.headertitle{
+	font-size: var(--headertitle-font-size);
+	font-family:var(--headertitle-font-family);
+	padding-top: var(--headertitle-padding-top);
+}
+
+div.summary{
+	visibility: hidden;
+}
+
+.contents a:visited{
+	color:var(--visited-link-color);
+}
+
+#text{
+	color: white;
+}
+
+a.el{
+    color:orange;
+    text-shadow: none;
+}
+dl.reflist dt{
+    text-shadow: none;
+}
+
+/* ######## NT Style specific variables */
+
+#projectnumber{
+    position: fixed;
+    color:var(--projectnumber-color);
+    font-size: x-small;
+    left:275px;
+}
+
+#slogan{
+    position: fixed;
+    color:var(--slogan-color);
+    right:10px;
+    font-size: large;
+}
+
+.directory tr.even{
+    background-color: var(--class-list-background-color-even);
+}
+
+.directory tr.odd{
+    background-color: var(--class-list-background-color-odd);
+}
+
+.directory td.desc{
+    color: var(--class-list-color);
+}
+
+.classindex dl.odd{
+    background-color: var(--class-index-background-color-odd);
+}
+
+.classindex dl.even{
+    background-color: var(--class-index-background-color-even);
+}
+
+.alphachar a{
+    color: var(--class-index-letter);
+}
+
+.qindex{
+    color:var(--class-index);
+}
+#doc-content{
+    margin-left: 256px !important;
+}

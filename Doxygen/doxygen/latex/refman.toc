@@ -1,0 +1,63 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}New\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tec Dokumentation}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Inhaltsverzeichnis}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Übersicht}{1}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Funktionen}{1}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Konfiguration}{2}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Demo}{2}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Kopier und Bearbeitungs Beispiel}{2}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}Besondere Hinweise}{2}{subsection.1.5.2}%
+\contentsline {subsubsection}{\numberline {1.5.2.1}1. Notes}{2}{subsubsection.1.5.2.1}%
+\contentsline {subsubsection}{\numberline {1.5.2.2}2. Warnings}{2}{subsubsection.1.5.2.2}%
+\contentsline {subsubsection}{\numberline {1.5.2.3}3. Deprecated}{2}{subsubsection.1.5.2.3}%
+\contentsline {subsubsection}{\numberline {1.5.2.4}4. Bug}{2}{subsubsection.1.5.2.4}%
+\contentsline {subsubsection}{\numberline {1.5.2.5}5. Unveränderlich}{3}{subsubsection.1.5.2.5}%
+\contentsline {subsubsection}{\numberline {1.5.2.6}6. Bedingung}{3}{subsubsection.1.5.2.6}%
+\contentsline {subsubsection}{\numberline {1.5.2.7}7. Nachbedingung}{3}{subsubsection.1.5.2.7}%
+\contentsline {subsubsection}{\numberline {1.5.2.8}8. Zu erledigen}{3}{subsubsection.1.5.2.8}%
+\contentsline {subsubsection}{\numberline {1.5.2.9}9. Bemerkungen}{3}{subsubsection.1.5.2.9}%
+\contentsline {chapter}{\numberline {2}Deprecated List}{5}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Bug List}{7}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Todo List}{9}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Topic Index}{11}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Topics}{11}{section.5.1}%
+\contentsline {chapter}{\numberline {6}Class Index}{13}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Class List}{13}{section.6.1}%
+\contentsline {chapter}{\numberline {7}File Index}{15}{chapter.7}%
+\contentsline {section}{\numberline {7.1}File List}{15}{section.7.1}%
+\contentsline {chapter}{\numberline {8}Topic Documentation}{17}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Bruch testen}{17}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}Detailed Description}{17}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}Bruchklasse}{17}{subsection.8.1.2}%
+\contentsline {subsubsection}{\numberline {8.1.2.1}Konstruktor}{17}{subsubsection.8.1.2.1}%
+\contentsline {subsubsection}{\numberline {8.1.2.2}Wert abrufen}{18}{subsubsection.8.1.2.2}%
+\contentsline {subsubsection}{\numberline {8.1.2.3}Multiplikation}{18}{subsubsection.8.1.2.3}%
+\contentsline {subsection}{\numberline {8.1.3}Testklasse}{18}{subsection.8.1.3}%
+\contentsline {subsubsection}{\numberline {8.1.3.1}Tests ausführen}{18}{subsubsection.8.1.3.1}%
+\contentsline {chapter}{\numberline {9}Class Documentation}{19}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Bruch Class Reference}{19}{section.9.1}%
+\contentsline {subsection}{\numberline {9.1.1}Detailed Description}{19}{subsection.9.1.1}%
+\contentsline {subsection}{\numberline {9.1.2}Constructor \& Destructor Documentation}{19}{subsection.9.1.2}%
+\contentsline {subsubsection}{\numberline {9.1.2.1}Bruch()}{19}{subsubsection.9.1.2.1}%
+\contentsline {subsection}{\numberline {9.1.3}Member Function Documentation}{20}{subsection.9.1.3}%
+\contentsline {subsubsection}{\numberline {9.1.3.1}ggt()}{20}{subsubsection.9.1.3.1}%
+\contentsline {subsubsection}{\numberline {9.1.3.2}operator$\ast $=()}{21}{subsubsection.9.1.3.2}%
+\contentsline {section}{\numberline {9.2}Test Class Reference}{21}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}Detailed Description}{21}{subsection.9.2.1}%
+\contentsline {subsection}{\numberline {9.2.2}Constructor \& Destructor Documentation}{21}{subsection.9.2.2}%
+\contentsline {subsubsection}{\numberline {9.2.2.1}Test()}{21}{subsubsection.9.2.2.1}%
+\contentsline {section}{\numberline {9.3}Time Class Reference}{22}{section.9.3}%
+\contentsline {subsection}{\numberline {9.3.1}Detailed Description}{22}{subsection.9.3.1}%
+\contentsline {subsection}{\numberline {9.3.2}Constructor \& Destructor Documentation}{23}{subsection.9.3.2}%
+\contentsline {subsubsection}{\numberline {9.3.2.1}Time()}{23}{subsubsection.9.3.2.1}%
+\contentsline {subsubsection}{\numberline {9.3.2.2}$\sim $Time()}{23}{subsubsection.9.3.2.2}%
+\contentsline {subsection}{\numberline {9.3.3}Member Function Documentation}{23}{subsection.9.3.3}%
+\contentsline {subsubsection}{\numberline {9.3.3.1}hour()}{23}{subsubsection.9.3.3.1}%
+\contentsline {subsubsection}{\numberline {9.3.3.2}just\_minutes()}{23}{subsubsection.9.3.3.2}%
+\contentsline {subsubsection}{\numberline {9.3.3.3}just\_seconds()}{24}{subsubsection.9.3.3.3}%
+\contentsline {subsubsection}{\numberline {9.3.3.4}minute()}{24}{subsubsection.9.3.3.4}%
+\contentsline {subsubsection}{\numberline {9.3.3.5}second()}{24}{subsubsection.9.3.3.5}%
+\contentsline {chapter}{\numberline {10}File Documentation}{25}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Bruch.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{25}{section.10.1}%
+\contentsline {section}{\numberline {10.2}test\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}class.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{26}{section.10.2}%
+\contentsline {section}{\numberline {10.3}time.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{26}{section.10.3}%

@@ -1,0 +1,71 @@
+\doxysection{Bruch.\+h}
+\hypertarget{_bruch_8h_source}{}\label{_bruch_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ Bruch\_H\_}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ Bruch\_H\_}}
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_bruch}{Bruch}}\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00055\ \ \ \ \ \mbox{\hyperlink{class_bruch_a05e1f4aae8cd7c722c09d2539f177ce3}{Bruch}}(\textcolor{keywordtype}{int}\ z\ =\ 0,\ \textcolor{keywordtype}{int}\ n\ =\ 1)\ :}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \_nenner\ \{\ n\ /\ \mbox{\hyperlink{class_bruch_a13fc58380d9e596c1d9e8c71a99965d2}{ggt}}(z,\ n)\ \},\ \_zaehler\ \{\ z\ /\ \mbox{\hyperlink{class_bruch_a13fc58380d9e596c1d9e8c71a99965d2}{ggt}}(z,\ n)\ \}\ \{}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\_nenner\ ==\ 0)\ \{}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \_nenner\ =\ 1;}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\_nenner\ <\ 0)\ \{}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \_nenner\ *=\ -\/1;}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \_zaehler\ *=\ -\/1;}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \}\ else}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ ;}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \ \ \ \ \}}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{int}\ nenner()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \_nenner;}
+\DoxyCodeLine{00069\ \ \ \ \ \}}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{int}\ zaehler()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \_zaehler;}
+\DoxyCodeLine{00072\ \ \ \ \ \}}
+\DoxyCodeLine{00083\ \ \ \ \ \mbox{\hyperlink{class_bruch}{Bruch}}\&\ \mbox{\hyperlink{class_bruch_acf7ab8d770abbac3d760fdfae71c4271}{operator*=\ }}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_bruch}{Bruch}}\&\ b)\{}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ this-\/>\_zaehler\ *=\ b.\_zaehler;}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ this-\/>\_nenner\ *=\ b.\_nenner;}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ a\ =\ \mbox{\hyperlink{class_bruch_a13fc58380d9e596c1d9e8c71a99965d2}{ggt}}(\_zaehler,\ \_nenner);}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ this-\/>\_zaehler\ =\ this-\/>\_zaehler/a;}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ this-\/>\_nenner\ =\ this-\/>\_nenner/a;}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00090\ \ \ \ \ \}}
+\DoxyCodeLine{00105\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_bruch_a13fc58380d9e596c1d9e8c71a99965d2}{ggt}}(\textcolor{keywordtype}{int}\ a,\ \textcolor{keywordtype}{int}\ b)\ \{}
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keywordflow}{while}\ (a\ !=\ 0)\ \{}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ a\ \%=\ b;}
+\DoxyCodeLine{00108\ \ \ \ \ \}}
+\DoxyCodeLine{00109\ \ \ \ \ \textcolor{keywordflow}{return}\ b;}
+\DoxyCodeLine{00110\ \}}
+\DoxyCodeLine{00111\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00112\ \ \ \ \ \textcolor{keywordtype}{int}\ \_nenner;}
+\DoxyCodeLine{00113\ \ \ \ \ \textcolor{keywordtype}{int}\ \_zaehler;}
+\DoxyCodeLine{00114\ \};}
+\DoxyCodeLine{00115\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{class_bruch}{Bruch}}\ operator*(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_bruch}{Bruch}}\ \&b,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_bruch}{Bruch}}\ \&c)\ \{}
+\DoxyCodeLine{00116\ \ \ \ \ \mbox{\hyperlink{class_bruch}{Bruch}}\ ret(b.zaehler()\ *\ c.zaehler(),\ b.nenner()\ *\ c.nenner());}
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keywordflow}{return}\ ret;}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00119\ \}}
+\DoxyCodeLine{00120\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}\ operator==(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_bruch}{Bruch}}\ \&b,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_bruch}{Bruch}}\ \&c)\ \{}
+\DoxyCodeLine{00121\ \ \ \ \ \textcolor{keywordtype}{float}\ b1\ =\ b.zaehler()\ /\ b.nenner();}
+\DoxyCodeLine{00122\ \ \ \ \ \textcolor{keywordtype}{float}\ b2\ =\ c.zaehler()/c.nenner();}
+\DoxyCodeLine{00123\ \ \ \ \ \textcolor{keywordflow}{if}\ (b1\ ==\ b2)\ \{}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00125\ \ \ \ \ \}\ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00128\ \}}
+\DoxyCodeLine{00129\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}\ operator!=(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_bruch}{Bruch}}\ \&b,\textcolor{keyword}{const}\ \mbox{\hyperlink{class_bruch}{Bruch}}\&\ c)\{}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ b1\ =\ b.zaehler()/b.nenner();}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ b2\ =\ c.zaehler()/c.nenner();}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (b1\ !=\ b2)\{}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \}\textcolor{keywordflow}{else}}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00136\ \}}
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00139\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ Bruch\_H\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

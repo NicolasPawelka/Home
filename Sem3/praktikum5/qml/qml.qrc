@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Main.qml</file>
+		<file>KommilitonModel.qml</file>
+		<file>KommilitonDelegate.qml</file>
+		<file>Kommilitonen.txt</file>
+		<file>Mann.png</file>
+		<file>Frau.png</file>
+		
+		
+    </qresource>
+</RCC>

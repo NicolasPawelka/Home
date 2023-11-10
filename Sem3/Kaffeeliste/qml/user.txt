@@ -1,0 +1,17 @@
+[
+	{
+        "vorname": "Hans",
+        "name": "Mayer",
+        "bild": "generic-male.jpg",
+		"zuBezahlen": "00",
+		"konto": "10",
+        "anzahlKaffee": "3"
+	},{
+        "vorname": "Berta",
+        "name": "Müller",
+        "bild": "generic-female.jpg",
+		"zuBezahlen": "5",
+		"konto": "00",
+        "anzahlKaffee": "4"
+	}
+]
