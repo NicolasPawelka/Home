@@ -12,3 +12,4 @@ class PDFButton{
 document.addEventListener("DOMContentLoaded", () =>{
   const pdfButton = new PDFButton();
 })
+

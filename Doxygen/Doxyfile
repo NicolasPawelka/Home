@@ -1038,7 +1038,7 @@ GENERATE_HTML          = YES
 # it.
 # The default directory is: html.
 # This tag requires that the tag GENERATE_HTML is set to YES.
-HTML_OUTPUT            = html
+HTML_OUTPUT            = ../doxygen/html
 # The HTML_FILE_EXTENSION tag can be used to specify the file extension for each
 # generated HTML page (for example: .htm, .php, .asp).
 # The default value is: .html.
@@ -1095,7 +1095,6 @@ HTML_STYLESHEET        =
 # customization is desired it has to be added explicitly. For an example see the
 # documentation.
 # This tag requires that the tag GENERATE_HTML is set to YES.
-ECHO ist ausgeschaltet (OFF).
 HTML_EXTRA_STYLESHEET  = ./doxygen/css/customdoxygen.css\
                          ./doxygen/css/darkmode_button.css\
                          ./doxygen/css/customize.css\
