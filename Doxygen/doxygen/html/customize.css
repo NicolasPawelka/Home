@@ -13,7 +13,7 @@ html {
     --page-background-color: white;
     --page-foreground-color: black;
     --page-link-color: black;
-    --visited-link-color: orange;
+    --visited-link-color: black;
 
     /* Inhalt */
 
@@ -718,4 +718,7 @@ dl.reflist dt{
 }
 #doc-content{
     margin-left: 256px !important;
+}
+dl.reflist dt{
+    background-color: #005da2;
 }
