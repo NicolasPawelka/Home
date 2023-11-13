@@ -31,7 +31,7 @@ html {
 
     --side-nav-color: #006BAF;
     --side-nav-background-image: url('../images/background.png');
-    --side-nav-selected-box-shadow: inset 4px 0 0 0 white;
+    --side-nav-selected-box-shadow: inset 1px 0 0 0 white;
     --side-nav-margin-top: 50px;
     --side-nav-margin-left: 25px;
     --links-contents-size: 15px;
@@ -168,6 +168,10 @@ html {
     --class-index-dark-letter:white;
     --class-index-dark:white;
 
+    /* Memberdef title */
+
+    --member-def-dark-background-color: black;
+    --member-def-light-background-color:#005da2;
     /* ################################################################################ */
      /* Ende des anpassbaren Bereichs */
 }
@@ -593,6 +597,7 @@ a{
 	border-bottom: 1px solid white;
 	text-shadow: none;
 	color:var(--member-def-color);
+    background-color: var(--member-def-light-background-color);
 }
 
 .memname td{

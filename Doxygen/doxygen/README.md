@@ -18,16 +18,17 @@ Unser Projekt, das Code-Dokumentationstool der NewTec GmbH, ist eine Anwendung, 
 ## Funktionen
 
 - Die Dokumentation ist in NewTec-Farben gestaltet
-- Dark Mode verfügbar
+- Dark-/Lightmode verfügbar
 - Sie können enthaltene Codefragmente kopieren.
 - Sie können jede Klasse, Methode oder Funktion im Projekt mit der Suchleiste finden
 - In der Suchleiste haben Sie die Möglichkeit zwischen diesen drei zu filtern
-- Warnungen, Hinweise oder veraltete Teile sind farblich hervorgehoben
+- Möglichkeit zur Einbindung von farblich hervorgehobenen Paragraphen
 
 ## Konfiguration
 
-Um die Dokumentation auf Ihr persönliches Projekt zu personalisieren können Sie einfach in Ihrer Kommandozeile den Befehl : ./config.sh ausführen. Daraufhin werden Sie aufgefordert 
-den Projektnamen sowie die Projektnummer einzugeben, bestätigen Sie beide Eingaben mit Enter und Ihr Projekt ist nun personalisiert.
+Um die Dokumentation auf Ihr persönliches Projekt zu personalisieren können Sie einfach, insofern Sie sich im entsprechenden Verzeichnis befinden, in Ihrer Kommandozeile den Befehl : 
+./config.sh ausführen. Daraufhin werden Sie aufgefordert 
+den Projektnamen sowie die Projektnummer einzugeben, bestätigen Sie beide Eingaben mit Enter und Ihr Projekt ist nun personalisiert. Eine weitere Möglichkeit besteht darin die enstprechenden Zeilen im Doxyfile per Hand zu ändern.
 
 ## Demo
 ### Kopier und Bearbeitungs Beispiel

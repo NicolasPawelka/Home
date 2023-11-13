@@ -27,23 +27,29 @@ class DarkModeToggle {
         const memtile = document.getElementsByClassName("memtitle");
         const links = document.getElementsByClassName("el");
         const memberDeclaration = document.getElementsByClassName(".memItemRight");
+        const memberDescription = document.getElementsByClassName("memproto")
         sideNav.style.backgroundImage = this.darkMode ? 'url("../images/background_invertiert.png")': null;
         image.style.filter = this.darkMode ? 'var( --both-button-filter-on-dark)' : 'invert(0)';
         titlearea.style.backgroundImage = this.darkMode ? 'url("../images/background_invertiert.png")': 'url("../images/titlearea_background.png")';
         titlearea.style.borderColor = this.darkMode ? '#302600' : 'white';
         ResultWindow.style.backgroundColor = this.darkMode ? 'white' : '#005da2';
+        if(header != null){
         header.style.backgroundColor = this.darkMode ? 'var(--header-background-color)' : 'var(--header-background-color)';
+        }
         for(var i = 0; i < fragments.length; ++i){
             fragments[i].style.filter = this.darkMode ? 'invert(1)' : 'invert(0)';
         }
         for(var i = 0; i < memtile.length; ++i){
-            memtile[i].style.backgroundColor = this.darkMode ? 'var(--member-def-title-dark-background)' : 'var(--member-def-title-background)'
+            memtile[i].style.backgroundColor = this.darkMode ? 'var(--member-def-title-dark-background)' : 'var(--member-def-title-background)';
         }
         for(var i = 0; i < memberDeclaration.length; ++i){
             memberDeclaration[i].style.color = this.darkMode ? 'white' : 'black';
         }
         for(var i = 0; i < links.length; ++i){
             links[i].style.color = this.darkMode ? 'white' : 'black';
+        }
+        for(var i = 0; i < memberDescription.length; i++){
+            memberDescription[i].style.backgroundColor = this.darkMode ? 'var(--member-def-dark-background-color)' : 'var(--member-def-light-background-color)';
         }
     }
 
