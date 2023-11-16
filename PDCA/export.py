@@ -221,6 +221,7 @@ def init(project_file_path):
          PROJECT = win32.Dispatch("MSProject.Application")
          PROJECT.FileOpen(PROJECT_FILE_PATH)
 
+    print(EXCEL_FILE_PATH)
     workbook = load_workbook(EXCEL_FILE_PATH)
     worksheet = workbook[SELECTED_SHEET]
 
@@ -358,4 +359,4 @@ if __name__ == "__main__":
                 init(mpp_file_path)
     else:
         mpp_file_path = r"C:\Users\npawelka\Desktop\Beispiel.mpp"
-        init(mpp_file_path)
+        update(mpp_file_path)

@@ -188,8 +188,9 @@ def find_file_path(name):
     command = f'cmd /c "cd ../.. & cd Desktop & dir /s /b "{name}"'
 
     process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE,shell=True,text=True)
-    stdout,stderr = process.communicate()
-
+    stdout = process.communicate()
+    stdout = r'C:\Users\npawelka\Desktop\PDCA\PDCA_ETO.EEVACTUATOR.Entw.016.xlsm'
+    
     return stdout
 
 def convert_to_raw_string(input):
@@ -244,6 +245,7 @@ def init(project_file_path):
          PROJECT = win32.Dispatch("MSProject.Application")
          PROJECT.FileOpen(PROJECT_FILE_PATH)
 
+         
     workbook = load_workbook(EXCEL_FILE_PATH, data_only=True)
     worksheet = workbook[DATABASE_NAME]
 
@@ -265,8 +267,7 @@ def init(project_file_path):
         ID.append(last_value)
         
     add_resource()
-
-        
+    
     if calling_function == "update":
         update("SUCCESS")
     else:
@@ -387,4 +388,4 @@ if __name__ == "__main__":
                 init(mpp_file_path)
     else:
         mpp_file_path = r"C:\Users\npawelka\Desktop\Beispiel.mpp"
-        init(mpp_file_path)
+        update(mpp_file_path)
