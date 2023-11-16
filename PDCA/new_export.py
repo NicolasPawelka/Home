@@ -26,7 +26,7 @@ SELECTED_SHEET = None
 TASKS = None
 PROJECT_FILE_PATH = None
 WAS_SUMMARY = False
-RESOURCES = None
+RESOURCES = []
 ID = []
 DATABASE_NAME = "PDCA_InternDatenbank"
 PDCA_POSITION_INDEX = None
@@ -47,46 +47,51 @@ def find_existing_task_by_name(name, TASKS):
     return None
 
 
+def find_Sheet_Name(df):
+    num_columns = df.iloc[PDCA_POSITION_INDEX].shape[0]
+    for i in range(num_columns):
+        if df.iloc[PDCA_POSITION_INDEX,i] == "PDCAPosSheet":
+            return i
+    return -1
 
 def find_TASK_NAME(df,TASK_NAME):
-    num_columns = df.shape[1]
+    num_columns = df.iloc[PDCA_POSITION_INDEX].shape[0]
     for i in range(num_columns):
         if df.iloc[PDCA_POSITION_INDEX,i] == TASK_NAME:
             return i
     return -1
 
 def find_ID(df):
-    num_columns = df.shape[1]
+    num_columns = df.iloc[PDCA_POSITION_INDEX].shape[0]
     for i in range(num_columns):
         if df.iloc[PDCA_POSITION_INDEX,i] == "PDCAPosNr":
             return i
     return -1
 
 def find_START(df):
-    num_columns = df.shape[1]
+    num_columns = df.iloc[PDCA_POSITION_INDEX].shape[0]
     for i in range(num_columns):
-        if df.iloc[PDCA_POSITION_INDEX,i] == "Startdatum":
+        if df.iloc[PDCA_POSITION_INDEX,i] == "StartDate":
             return i
     return -1
 
 def find_BUDGET(df):
-    num_columns = df.shape[1]
+    num_columns = df.iloc[PDCA_POSITION_INDEX].shape[0]
     for i in range(num_columns):
-        if df.iloc[PDCA_POSITION_INDEX,i] == "Geplant":
+        if df.iloc[PDCA_POSITION_INDEX,i] == "BudgetHoursPlanned":
             return i
     return -1
 
 
 def find_RESOURCE(df):
-    
-    num_columns = df.shape[1]
-    for i in range(num_columns):
-        if df.iloc[PDCA_POSITION_INDEX,i] == "Bearbeiter":
+    length = len(df.iloc[:,1])
+    for i in range(length):
+        if df.iloc[i,1] == "Mitarbeiter im Projekt":
             return i
     return -1
 
 def find_PDCA_Positionen(df):
-    length = len(df.iloc[:,0])
+    length = len(df.iloc[:,1])
     for i in range(length):
         if df.iloc[i,1] == "PDCAPosID":
             return i
@@ -157,12 +162,19 @@ def add_Summary(TASKS, name,depth,date,budget):
     task.Name = name
     task.Start = date
     task.OutlineLevel = depth
-    task.Cost = budget
+    #task.Cost = budget
     return 1
 
-def add_resource(list, resources):
-    for resource_name in list:
-        resources.Add(resource_name)
+def add_resource():
+    global DATA_FRAME
+    global ACTIVE_PROJECT
+    RESOURCE_index = find_RESOURCE(DATA_FRAME) + 1
+
+    for _, row in DATA_FRAME.iloc[RESOURCE_index:].iterrows():
+        if row.iloc[1] is not None:
+            ACTIVE_PROJECT.Resources.Add(row.iloc[1])
+        else:
+            break
 
 def extract_file_name(text):
     match = re.search(r'[^\\/]+$', text)
@@ -195,6 +207,7 @@ def init(project_file_path):
     global ID
     global DATABASE_NAME
     global PDCA_POSITION_INDEX
+    global RESOURCES
     
     calling_function = inspect.currentframe().f_back.f_code.co_name
 
@@ -232,7 +245,7 @@ def init(project_file_path):
          PROJECT = win32.Dispatch("MSProject.Application")
          PROJECT.FileOpen(PROJECT_FILE_PATH)
 
-    workbook = load_workbook(EXCEL_FILE_PATH)
+    workbook = load_workbook(EXCEL_FILE_PATH, data_only=True)
     worksheet = workbook[DATABASE_NAME]
 
     DATA_FRAME = pd.DataFrame(worksheet.values)
@@ -243,15 +256,18 @@ def init(project_file_path):
     TASKS = ACTIVE_PROJECT.Tasks
 
     ID_index = find_ID(DATA_FRAME)
-    last_value = None  # Initialize last_value to None
-    for _, row in DATA_FRAME.iterrows():
+    last_value = None  
+    for _, row in DATA_FRAME.iloc[PDCA_POSITION_INDEX:].iterrows():
         if row.iloc[ID_index] is not None:
             last_value = row.iloc[ID_index]
             ID.append(last_value)
 
     if last_value is not None:
         ID.append(last_value)
+        
+    add_resource()
 
+        
     if calling_function == "update":
         update("SUCCESS")
     else:
@@ -272,9 +288,8 @@ def update(mpp_file_path):
         ID_index = find_ID(DATA_FRAME)
         START_index = find_START(DATA_FRAME)
         BUDGET_index = find_BUDGET(DATA_FRAME)
-        RESOURCE_index = find_RESOURCE(DATA_FRAME)
     
-        if Task_Name_index == -1 or ID_index == -1 or START_index == -1 or BUDGET_index == -1 or RESOURCE_index == -1:
+        if Task_Name_index == -1 or ID_index == -1 or START_index == -1 or BUDGET_index == -1:
             messagebox.showerror("Error", "Could not find required columns in the Excel data.")
             sys.exit(1)
     
@@ -283,7 +298,7 @@ def update(mpp_file_path):
             current_name = row.iloc[Task_Name_index]
             current_id = row.iloc[ID_index]
             current_budget = row.iloc[BUDGET_index]
-            if current_name is None or current_name == TASK_NAME:
+            if current_name is None or current_name == TASK_NAME or current_name == SELECTED_SHEET:
                 continue
             else:
                 current_depth = calculate_depth(current_id)
@@ -312,25 +327,28 @@ def main():
     ID_index = find_ID(DATA_FRAME)
     START_index = find_START(DATA_FRAME)
     BUDGET_index = find_BUDGET(DATA_FRAME)
-    RESOURCE_index = find_RESOURCE(DATA_FRAME)
-    if Task_Name_index == -1 or ID_index == -1 or START_index == -1 or BUDGET_index == -1 or RESOURCE_index == -1:
+    SHEET_index = find_Sheet_Name(DATA_FRAME)
+    if Task_Name_index == -1 or ID_index == -1 or START_index == -1 or BUDGET_index == -1 or SHEET_index == -1:
         messagebox.showerror("Error", "Could not find Column")
         sys.exit()
 
 
-    for _,row in DATA_FRAME.iterrows():
+    for _,row in DATA_FRAME.iloc[PDCA_POSITION_INDEX:].iterrows():
         global TASKS
         global WAS_SUMMARY
 
         current_name = row.iloc[Task_Name_index]
         current_id = row.iloc[ID_index]
         current_budget = row.iloc[BUDGET_index]
-        if current_name is None or current_name == TASK_NAME:
+        current_sheet = row.iloc[SHEET_index]
+        if current_name is None or current_name == TASK_NAME or current_name == SELECTED_SHEET or current_sheet != SELECTED_SHEET:
             continue
         else:
             current_depth = calculate_depth(current_id)
             next_depth = calculate_depth(ID[current_index + 1])
             current_index += 1
+            if current_depth == 0:
+                continue
             if first_summary:
                 task_number += 1
                 START_DATE = simpledialog.askstring("Start festlegen",f"Bitte legen sie ein Start für {current_name} fest")
@@ -340,7 +358,7 @@ def main():
                 saved_depth = current_depth
             else:
                 date = row.iloc[START_index]
-                if date == None:
+                if date == None or date == "0":
                     date = datetime.now().strftime("%d.%m.%Y")
                 if is_summary(current_depth,saved_depth,next_depth) :
                     add_Summary(TASKS,current_name,current_depth,date,extract_budget(current_budget))
