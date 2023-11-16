@@ -166,13 +166,12 @@ def add_Summary(TASKS, name,depth,date,budget):
     return 1
 
 def add_resource():
-    global DATA_FRAME
-    global ACTIVE_PROJECT
     RESOURCE_index = find_RESOURCE(DATA_FRAME) + 1
 
     for _, row in DATA_FRAME.iloc[RESOURCE_index:].iterrows():
         if row.iloc[1] is not None:
-            ACTIVE_PROJECT.Resources.Add(row.iloc[1])
+            if row.iloc[1] not in [resource.Name for resource in ACTIVE_PROJECT.Resources]:
+                ACTIVE_PROJECT.Resources.Add(row.iloc[1])
         else:
             break
 
