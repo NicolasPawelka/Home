@@ -257,7 +257,7 @@ def init(project_file_path):
     TASKS = ACTIVE_PROJECT.Tasks
 
     ID_index = find_ID(DATA_FRAME)
-    last_value = None  
+    last_value = None
     for _, row in DATA_FRAME.iloc[PDCA_POSITION_INDEX:].iterrows():
         if row.iloc[ID_index] is not None:
             last_value = row.iloc[ID_index]
@@ -388,4 +388,4 @@ if __name__ == "__main__":
                 init(mpp_file_path)
     else:
         mpp_file_path = r"C:\Users\npawelka\Desktop\Beispiel.mpp"
-        update(mpp_file_path)
+        init(mpp_file_path)
