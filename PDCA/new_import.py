@@ -23,6 +23,7 @@ WORKBOOK = None
 WORKSHEET = None
 SHEET_NAME = None
 DATA = []
+KEY = []
 #########################
 def get_positiion():
     global EXCEL
@@ -30,7 +31,7 @@ def get_positiion():
     
     for i, sheet in enumerate(EXCEL.Worksheets, 1):
         if sheet.Name == active_sheet.Name:
-            return i
+            return i - 1
     return None
 
 def choose_project_file():
@@ -71,20 +72,22 @@ def main():
     global ACTIVE_PROJECT
     global TASKS
     global WORKSHEET
+    global KEY
     
     if TASKS is None:
         messagebox.showerror("Error", "Keine Project Daten erhalten")
         sys.exit(1)
         
     for task in TASKS:
-        DATA.append(f"{get_positiion()}.{task.OutlineNumber}")
+        KEY.append(f"{get_positiion()}.{task.OutlineNumber}")
+        DATA.append(task.Name)
         DATA.append(task.Start.strftime('%d-%m-%Y %H:%M:%S'))
         DATA.append(task.Finish.strftime('%d-%m-%Y %H:%M:%S'))
     if DATA is None:
         messagebox.showerror("Error", "DATA ist leer")
         sys.exit(1)
-    EXCEL.Application.Run("Transfer",DATA)
-    messagebox.showinfo("Completed", "Import der Daten erfolgreich!") 
+    EXCEL.Application.Run("Transfer",DATA,KEY)
+    messagebox.showinfo("Completed", "Import der Daten erfolgreich!")
     
                 
 
