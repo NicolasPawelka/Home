@@ -30,6 +30,8 @@ RESOURCES = []
 ID = []
 DATABASE_NAME = "PDCA_InternDatenbank"
 PDCA_POSITION_INDEX = None
+EXCEL = None
+WORKBOOK = None
 ############################
 def is_summary(current_depth, saved_depth, next_depth):
     if current_depth > saved_depth and current_depth > next_depth:
@@ -145,24 +147,27 @@ def extract_budget(text):
     return -1
 
 def add_Task(TASKS,name,depth,date,budget,vorgänger):
+    global EXCEL
     task = TASKS.Add()
     task.Manual = False
     task.Name = name
-    task.Start = date
+    #task.Start = date
     task.OutlineLevel = depth
-    task.Cost = budget
+    task.Work = budget * 60
     if vorgänger != -1:
         task.Predecessors = vorgänger
         pass
+    EXCEL.Application.Run("Sync",task.GUID,task.Name)
     return 1
 
 def add_Summary(TASKS, name,depth,date,budget):
+    global EXCEL
     task = TASKS.Add()
     task.Manual = False
     task.Name = name
     task.Start = date
     task.OutlineLevel = depth
-    #task.Cost = budget
+    EXCEL.Application.Run("Sync",task.GUID,task.Name)
     return 1
 
 def add_resource():
@@ -208,12 +213,16 @@ def init(project_file_path):
     global DATABASE_NAME
     global PDCA_POSITION_INDEX
     global RESOURCES
+    global START_DATE
+    global EXCEL
+    global WORKBOOK
     
     calling_function = inspect.currentframe().f_back.f_code.co_name
 
     if calling_function != "update":
         EXCEL_FILE_PATH = choose_excel_file()
         SELECTED_SHEET = choose_excel_sheet(EXCEL_FILE_PATH)
+        EXCEL = win32.Dispatch("Excel.Application")
         PROJECT = win32.Dispatch("MSProject.Application")
         PROJECT_FILE_PATH = project_file_path
         PROJECT.FileOpen(project_file_path)
@@ -247,6 +256,7 @@ def init(project_file_path):
 
          
     workbook = load_workbook(EXCEL_FILE_PATH, data_only=True)
+    WORKBOOK = workbook
     worksheet = workbook[DATABASE_NAME]
 
     DATA_FRAME = pd.DataFrame(worksheet.values)
@@ -267,6 +277,8 @@ def init(project_file_path):
         ID.append(last_value)
         
     add_resource()
+    
+    START_DATE = workbook['Cockpit']['F16'].value
     
     if calling_function == "update":
         update("SUCCESS")
@@ -304,7 +316,7 @@ def update(mpp_file_path):
                 current_depth = calculate_depth(current_id)
                 date = row.iloc[START_index]
                 if date is None:
-                    date = datetime.now().strftime("%d.%m.%Y")
+                    date = START_DATE
                 task = find_existing_task_by_name(current_name, TASKS)
                 if task:
                     task.Start = date
@@ -319,6 +331,8 @@ def update(mpp_file_path):
 
 def main():
     global ID
+    global START_DATE
+    global WORKBOOK
     current_index = 1
     saved_depth = 0
     task_number = 0
@@ -333,7 +347,7 @@ def main():
         sys.exit()
 
 
-    for _,row in DATA_FRAME.iloc[PDCA_POSITION_INDEX:].iterrows():
+    for index,row in DATA_FRAME.iloc[PDCA_POSITION_INDEX:].iterrows():
         global TASKS
         global WAS_SUMMARY
 
@@ -351,15 +365,14 @@ def main():
                 continue
             if first_summary:
                 task_number += 1
-                START_DATE = simpledialog.askstring("Start festlegen",f"Bitte legen sie ein Start für {current_name} fest")
                 first_summary = False
                 add_Summary(TASKS,current_name,current_depth,START_DATE,extract_budget(current_budget))
                 WAS_SUMMARY = True
                 saved_depth = current_depth
             else:
-                date = row.iloc[START_index]
-                if date == None or date == "0":
-                    date = datetime.now().strftime("%d.%m.%Y")
+                date = WORKBOOK[DATABASE_NAME]['K'][index].value
+                if date == None or date.year < 2000:
+                    date = START_DATE
                 if is_summary(current_depth,saved_depth,next_depth) :
                     add_Summary(TASKS,current_name,current_depth,date,extract_budget(current_budget))
                     task_number += 1

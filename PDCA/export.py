@@ -359,4 +359,4 @@ if __name__ == "__main__":
                 init(mpp_file_path)
     else:
         mpp_file_path = r"C:\Users\npawelka\Desktop\Beispiel.mpp"
-        update(mpp_file_path)
+        init(mpp_file_path)

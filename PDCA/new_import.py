@@ -22,8 +22,11 @@ TASKS = None
 WORKBOOK = None
 WORKSHEET = None
 SHEET_NAME = None
-DATA = []
+NAME = []
 KEY = []
+START = []
+END = []
+PROJECT_ID = []
 #########################
 def get_positiion():
     global EXCEL
@@ -80,15 +83,16 @@ def main():
         
     for task in TASKS:
         KEY.append(f"{get_positiion()}.{task.OutlineNumber}")
-        DATA.append(task.Name)
-        DATA.append(task.Start.strftime('%d-%m-%Y %H:%M:%S'))
-        DATA.append(task.Finish.strftime('%d-%m-%Y %H:%M:%S'))
-    if DATA is None:
+        NAME.append(task.Name)
+        START.append(task.Start.strftime('%d.%m.%Y'))
+        END.append(task.Finish.strftime('%d.%m.%Y'))
+        PROJECT_ID.append(task.GUID)
+    if KEY is None or NAME is None or START is None or END is None:
         messagebox.showerror("Error", "DATA ist leer")
         sys.exit(1)
-    EXCEL.Application.Run("Transfer",DATA,KEY)
+    EXCEL.Application.Run("Transfer",NAME,KEY,START,END,PROJECT_ID)
     messagebox.showinfo("Completed", "Import der Daten erfolgreich!")
-    
+     
                 
 
 if __name__ == "__main__":
