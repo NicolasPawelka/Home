@@ -30,7 +30,7 @@
 \newcommand{\tage}{123} % arbeitstagerechner verwenden!
 \newcommand{\titel}{Bericht zum praktischen Studiensemester}
 \newcommand{\kurztitel}{Praxisbericht}
-% \sperrvermerktrue % Kommentar am Anfang der Zeile löschen für Sperrvermerk
+\sperrvermerktrue % Kommentar am Anfang der Zeile löschen für Sperrvermerk
 
 % Wenn jemand unbedingt ein Glossar will, die nächsten drei Zeilen...
 %\usepackage{glossaries} % oder schlimmer mit [toc], damit es im TOC auftaucht
@@ -82,86 +82,6 @@
 
 \chapter{Einführung} \label{chap:einf}
 
-Die Firma
-% \gls{acme} % das fügt ein Glossar-Eintrag ein
-ACME Inc.\cite{acme,acmecatalog,kenner1994chuck} ist internationaler Marktführer
-bei Fallen aller Art.
-In der deutschen Niederlassung ist neben dem Vertrieb eine
-Entwicklungsabteilung ansässig, um Qualitätsmängel bei frühen
-Produktversionen zu identifizieren und gegebenenfalls abzustellen.
-Bei der Produktisierung sollte der gesamte Lebenszyklus,
-wie in Abbildung~\ref{fig:lifecycle} gezeigt,
-\begin{figure}[htp]
-  \centering
-  \includegraphics[width=.9\textwidth]{ablauf}
-  \caption{Lebenszyklus eines Produkts von ACME Inc.}
-  \label{fig:lifecycle}
-\end{figure}
-berücksichtigt werden.\marginpar{Fokus auf Ihren Aufgaben}
-Ziel ist dabei immer den Umsatz in einem Segment aus Tabelle~\ref{tab:umsatz}
-zu steigern.
-\begin{table}[htp]
-  \centering
-  \begin{tabular}{l|rrrrrrrrrr}
-    Fallentyp/Jahre    & 56 & 57 & 58 & 59 & 60 & 61 & 62 & 63 & 64 & 65 \\\hline\hline
-    Mechanische Fallen & 1  & 3  & 5  & 8  & 8  &  8 &  5 &  5 & 10 & 7 \\
-    Raketenfallen      & -  & -  & -  & 2  & 3  &  6 &  7 &  9 &  3 & 2 \\
-    Bogen              & 2  & 3  & 2  & 2  & 3  &  4 &  3 &  2 &  2 & 3 \\
-  \end{tabular}
-  \caption{Umsatz-Segmente von ACME Inc. von 1956-1965, in Tausend Dollar}
-  \label{tab:umsatz}
-\end{table}
-Langfristig sollte dann aber meist auch die Funktionalität garantiert
-werden können.
-Im Praktikum \ldots
-
-
-%% > weg damit
-\vskip\medskipamount % or other desired dimension
-\leaders\vrule width \textwidth\vskip0.4pt
-\vskip\medskipamount % ditto
-\nointerlineskip
-
-Bitte lesen Sie die Informationen zum Praxissemester~\cite{psmoodle}
-der Fakultät in Moodle.
-Sie halten sich an die Vorgaben im
-„Leitfaden zur Berichterstellung“~\cite{psberichtleitfaden},
-der auch in Moodle erhältlich ist.
-Für Hinweise zu \LaTeX~\cite{kopka,lamport,bibtexing,knuth} und zum
-Anfertigen einer Ausarbeitung~\cite{gockel,rechenberg} lesen Sie bitte
-auch das Thesis-Template in der
-Moodle Gruppe \texttt{PraxissemesterThesis}~\cite{psmoodle}.
-Ernsthaft, lesen Sie das Thesis-Template.
-Da stehen wirklich Hinweise zum Schreiben.
-Sie sollen dann durchaus viele Abbildungen und gegebenenfalls auch
-Tabellen in Ihren Text einbringen und nicht, wie hier im Template,
-nur Textwüsten.
-
-Die Vorstellung der Firma\marginpar{Vorstellung der Firma}
-braucht meist kein eigenes Kapitel und auf keinen Fall ein Logo.
-Sie machen selten eine Analyse der Firmenstruktur und die
-historische Entwicklung der Firma macht nur Seiten, aber hilft
-inhaltlich nicht.
-Also schreiben Sie in der Einleitung maximal nur einen Absatz
-zu der Firma und der Abteilung und konzentrieren sich dann auch
-die Inhalte.
-Wir schließen die Einleitung mit einer inhaltlichen Übersicht
-über die folgenden Kapitel.
-
-In Kapitel~\ref{chap:ppv} stellen wir die drei typischen Fallenprodukte
-vor sowie die passenden Prüfverfahren zur Verbesserung der
-mechanischen Genauigkeit und zur Reduktion der zeitlichen Verzögerung.
-In Kapitel~\ref{chap:sling} erläutern wir den Aufbau und das Messverfahren
-für die Abweichung von Schleudern beim Einsatz von schweren Gewichten
-über mehrere Tonnen.
-In Kapitel~\ref{chap:rocket} besprechen wir die erzielte Auslösereaktion
-durch Einsatz adäquater Sortierverfahren auf dem Mikrocontroller für die
-Raketensteuerung.
-Die Verbesserungen der Benutzbarkeit von Bögen unter Einsatz moderner Technik
-sammeln wir in Kapitel~\ref{chap:bow}.
-Abschließend fassen wir in Kapitel~\ref{chap:fazit} die im Praktikum
-erzielten mechanischen und zeitlichen Verbesserungen sowie die
-erhöhte Benutzbarkeit noch einmal zusammen.
 
 
 \chapter{Produkte und Prüfverfahren} \label{chap:ppv}
