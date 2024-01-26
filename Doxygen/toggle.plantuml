@@ -1,0 +1,11 @@
+@startuml toggle
+class DarkModeToggle{
+    -toggleButton
+    -body 
+    -darkMode 
+    +toggle()
+    +toggle_css()
+    +toggle_html()
+    +updateDarkMode()
+}
+@enduml
