@@ -1,3 +1,17 @@
+import subprocess
+import sys
+
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
+# Liste der erforderlichen Module
+required_packages = ["pandas", "pytz", "openpyxl", "pywin32"]
+
+# Installation der erforderlichen Module
+for package in required_packages:
+    install(package)
+
+
 import win32com.client as win32
 from win32com.client import constants as pjconstants
 import pandas as pd
@@ -8,11 +22,9 @@ from tkinter import filedialog, simpledialog, messagebox
 import math
 from openpyxl import load_workbook
 import re
-import sys
 import json
 import os
 import inspect
-import subprocess
 ############################
 DEMO = True
 TASK_NAME = "PDCAPosName"

@@ -1,17 +1,7 @@
 import win32com.client as win32
-from win32com.client import constants as pjconstants
-import pandas as pd
-import pytz
-from datetime import datetime
 import tkinter as tk
-from tkinter import filedialog, simpledialog, messagebox
-import math
-from openpyxl import load_workbook
-from openpyxl.styles import Font,Color
-import re
+from tkinter import filedialog,messagebox
 import sys
-import os
-from pyxll import xl_func, xl_macro
 ##########################
 DEMO = True
 EXCEL = None
