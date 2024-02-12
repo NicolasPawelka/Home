@@ -1,18 +1,10 @@
-// var {exec, spawn} = require('child_process');
-
-// exec('ls', function(err,stdout,stderr){
-//     if(err) console.error(stderr);
-//     console.log(stdout);
-// });
-
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
+
 const server = http.createServer((req, res) => {
-    if (req.url === '/Hello') {
-        res.end('Hello World');
-    } else if (req.url === '/PDF') {
+ if (req.url === '/PDF') {
         const pdfFilePath = path.join(__dirname, '../latex/refman.pdf');
 
         fs.readFile(pdfFilePath, (err, data) => {
@@ -29,12 +21,12 @@ const server = http.createServer((req, res) => {
             }
         });
     } else {
-        res.end('Hello Node.js');
+        res.end(server.statusCode);
     }
 });
 
 const PORT = 5000;
 server.listen(PORT, () => {
-    console.log(`Node.js running at http://localhost:${PORT}`);
+    console.log(`Node.js erreichbar auf http://localhost:${PORT}`);
     console.log("Drücken Sie eine beliebige Taste...");
 });
