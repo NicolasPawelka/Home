@@ -1,0 +1,15 @@
+@startuml Initialisierung
+start
+:Seite wird geladen;
+:Laden der Elemente;
+:Neue Instanz eines DarkMode Buttons
+ wird erstellt;
+:Aktuelles Theme 
+wird gelesen;
+if(Ist darkMode aktiv?)then(ja)
+    :Auf DarkMode wechseln;
+else(nein)
+endif
+
+stop
+@enduml

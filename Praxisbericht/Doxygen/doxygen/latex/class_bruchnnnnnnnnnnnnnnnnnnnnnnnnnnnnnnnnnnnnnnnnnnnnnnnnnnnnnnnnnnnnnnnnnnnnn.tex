@@ -1,0 +1,138 @@
+\doxysection{Bruchnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn Class Reference}
+\hypertarget{class_bruchnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn}{}\label{class_bruchnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn}\index{Bruchnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn@{Bruchnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn}}
+
+
+\doxysubsection{Detailed Description}
+This is a class which represents a fracture. 
+
+Class holds internally a counter and a denominator both are integer. 
+
+{\ttfamily \#include $<$Bruch.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_bruchnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn_add5bd76d7f949a3308b81c3796501700}{Bruch}} (int z=0, int n=1)
+\begin{DoxyCompactList}\small\item\em Constructor for class Constructor gets counter and denominator evalutes greatest common divisor and checks if the denominator is greater then zero. \end{DoxyCompactList}\item 
+\Hypertarget{class_bruchnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn_afcbf8ec6ee7476e9c2cc7872e4b75ecc}\label{class_bruchnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn_afcbf8ec6ee7476e9c2cc7872e4b75ecc} 
+int {\bfseries nenner} () const
+\item 
+\Hypertarget{class_bruchnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn_a58f773271a6e34f2205e594b8168b21f}\label{class_bruchnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn_a58f773271a6e34f2205e594b8168b21f} 
+int {\bfseries zaehler} () const
+\item 
+\mbox{\hyperlink{class_bruchnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn_add5bd76d7f949a3308b81c3796501700}{Bruch}} \& \mbox{\hyperlink{class_bruchnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn_aeff38694e177fab88f45acefc7936a50}{operator\texorpdfstring{$\ast$}{*}=}} (const \mbox{\hyperlink{class_bruchnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn_add5bd76d7f949a3308b81c3796501700}{Bruch}} \&b)
+\begin{DoxyCompactList}\small\item\em Copy Constructor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_bruchnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn_a17b902c1a6ec554441d226316601016a}{ggt}} (int a, int b)
+\begin{DoxyCompactList}\small\item\em Inline Function to determine the greatest common divisor. The Function gets the counter and denominator and determines the greatest common divisor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_bruchnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn_add5bd76d7f949a3308b81c3796501700}\label{class_bruchnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn_add5bd76d7f949a3308b81c3796501700} 
+\index{Bruchnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn@{Bruchnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn}!Bruch@{Bruch}}
+\index{Bruch@{Bruch}!Bruchnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn@{Bruchnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn}}
+\doxysubsubsection{\texorpdfstring{Bruch()}{Bruch()}}
+{\footnotesize\ttfamily Bruchnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn\+::\+Bruch (\begin{DoxyParamCaption}\item[{int}]{z = {\ttfamily 0},  }\item[{int}]{n = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for class Constructor gets counter and denominator evalutes greatest common divisor and checks if the denominator is greater then zero. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z} & counter if no value is given it is 0 per default \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em n} & denominator if no value is given it is 1 per default\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Diese Klasse wurde zu Demo Zwecken erstellt. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{int}\ var\ =\ 0;}
+
+\end{DoxyCode}
+ Notizen dienen als Hinweise oder Erklärungen zu den dargestellten Funktionen.
+\end{DoxyNote}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{class_bruchnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn_add5bd76d7f949a3308b81c3796501700}{Bruch}}(\textcolor{keywordtype}{int}\ z\ =\ 0,\ \textcolor{keywordtype}{int}\ n\ =\ 1)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ var\ =\ 0;}
+\DoxyCodeLine{\ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (cond\ ==\ \textcolor{keyword}{false}\ ||}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ cond2\ ==\ \textcolor{keyword}{true})}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \mbox{\hyperlink{class_bruchnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn_add5bd76d7f949a3308b81c3796501700}{Bruch}}(\textcolor{keywordtype}{int}\ z\ =\ 0,\ \textcolor{keywordtype}{int}\ n\ =\ 1)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{int}\ var\ =\ 0;}
+\DoxyCodeLine{\ }
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (cond\ ==\ \textcolor{keyword}{false}\ ||}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cond2\ ==\ \textcolor{keyword}{true})}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ }
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+\begin{DoxyWarning}{Warning}
+Warnings dienen dazu Entwickler auf potentielle Probleme und Fehler hinzuweisen!
+\end{DoxyWarning}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000001}{Deprecated}}]Dieser Abschnitt weist auf veraltete Funktionen hin.\end{DoxyRefDesc}
+\Hypertarget{class_bruchnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn_a17b902c1a6ec554441d226316601016a}\label{class_bruchnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn_a17b902c1a6ec554441d226316601016a} 
+\index{Bruchnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn@{Bruchnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn}!ggt@{ggt}}
+\index{ggt@{ggt}!Bruchnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn@{Bruchnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn}}
+\doxysubsubsection{\texorpdfstring{ggt()}{ggt()}}
+{\footnotesize\ttfamily int Bruchnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn\+::ggt (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inline Function to determine the greatest common divisor. The Function gets the counter and denominator and determines the greatest common divisor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & = counter \\
+\hline
+{\em b} & = denominator \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Greatest common divisor
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000001}{Bug}}]Dies ist ein Beispiel Bug\end{DoxyRefDesc}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{int}\ var\ =\ 0;}
+
+\end{DoxyCode}
+ \Hypertarget{class_bruchnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn_aeff38694e177fab88f45acefc7936a50}\label{class_bruchnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn_aeff38694e177fab88f45acefc7936a50} 
+\index{Bruchnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn@{Bruchnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn}!operator\texorpdfstring{$\ast$}{*}=@{operator\texorpdfstring{$\ast$}{*}=}}
+\index{operator\texorpdfstring{$\ast$}{*}=@{operator\texorpdfstring{$\ast$}{*}=}!Bruchnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn@{Bruchnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}=()}{operator*=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_bruchnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn_add5bd76d7f949a3308b81c3796501700}{Bruch}} \& Bruchnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn\+::operator\texorpdfstring{$\ast$}{*}= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_bruchnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn_add5bd76d7f949a3308b81c3796501700}{Bruch}} \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copy Constructor. 
+
+\begin{DoxyReturn}{Returns}
+Object 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_bruchnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn_add5bd76d7f949a3308b81c3796501700}{Bruch}}\&\ operator\ ==(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_bruchnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn_add5bd76d7f949a3308b81c3796501700}{Bruch}}\&\ b)\{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ b\ =\ 12;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+source/Bruch.\+h\end{DoxyCompactItemize}
