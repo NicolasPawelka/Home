@@ -1,0 +1,34 @@
+@startuml architecture
+
+package "MS Project Integration" {
+    package "Main Procedures" {
+        [Transfer] --> [EvalDepth]
+        [Transfer] --> [WorkPackageExists]
+        [Transfer] --> [getPosID]
+        [Transfer] --> [getPosNr]
+        [Transfer] --> [getRange]
+        [Transfer] --> [getPosSheet]
+        [Transfer] --> [getPackage]
+        [Transfer] --> [getPosition]
+        [Transfer] --> [wasDeleted]
+        [Transfer] --> [delet]
+        [Transfer] --> [getPosID_Workpackage]
+        [Transfer] --> [getWorkPackageID]
+        [Transfer] --> [update]
+        [Transfer] --> [sync]
+        [Transfer] --> [arrange]
+    }
+    
+    package "Database Connector" {
+        [ModInternDatabaseConnector] --> [getCurrentWorkPackages]
+        [ModInternDatabaseConnector] --> [getCurrentPDCAPositions]
+        [ModInternDatabaseConnector] --> [SetMSProjectID]
+        [ModInternDatabaseConnector] --> [deleteWorkPackage]
+    }
+    
+    package "Python Integration" {
+        [link_python_project] <--> [Search]
+    }
+}
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml DatabaseConnector
+    package "Datenbankverbindung" {
+        [ModInternDatabaseConnector] <-- [WorkPackageExists]
+        [ModInternDatabaseConnector] <-- [getPosID]
+        [ModInternDatabaseConnector] <-- [getPosNr]
+        [ModInternDatabaseConnector] <-- [getPosSheet]
+        [ModInternDatabaseConnector] <-- [getPackage]
+        [ModInternDatabaseConnector] <-- [getPosition]
+        [ModInternDatabaseConnector] <-- [wasDeleted]
+        [ModInternDatabaseConnector] <-- [delet]
+    }
+@enduml

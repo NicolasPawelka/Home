@@ -1,0 +1,27 @@
+@startuml transfer
+
+
+start
+:Variablen initialisieren;
+:Instanzen von PDCA-Klassen erzeugen;
+if(Arbeitspaket gelöscht?)then(ja)
+    :Löschen aus Liste;
+endif
+repeat
+switch (Positionstiefe?)
+case ( 1 oder 2)
+    :Aktuelle Sammelaufgabe;
+    :Neue Position erstellen;
+case( 3)
+    If(Existiert Arbeitspaket?)then(Ja)
+        :Update Arbeitspaket;
+    else(Nein)
+        :Arbeitspaket erstellen;
+    endif
+endswitch
+repeatwhile(Daten vorhanden?)
+end
+
+
+
+@enduml
