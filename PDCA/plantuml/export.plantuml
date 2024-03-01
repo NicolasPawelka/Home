@@ -1,0 +1,34 @@
+@startuml export
+
+start
+:Auslesen der Argumente;
+switch(Wert des 2.Argument)
+case( Update)
+    :Variablen initialisieren;
+    :Worksheet laden;
+    repeat
+    if(Haben sich Daten geändert?)then(ja)
+        :Daten aktualisieren;
+    else(nein)
+    endif
+    repeatwhile(Daten vorhanden?);
+case( Import)
+    :Variablen initialisieren;
+    :Worksheet laden;
+    :Resourcen hinzufügen;
+    repeat
+    if(Sammelaufgabe?)then(ja)
+        :Sammelaufgabe hinzufügen;
+    else(nein)
+        :Aufgabe zur aktuellen Sammelaufgabe 
+        hinzufügen;
+    endif 
+    repeatwhile(Daten vorhanden?)
+
+endswitch
+
+
+
+end
+
+@enduml

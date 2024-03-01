@@ -1,0 +1,31 @@
+@startuml Component
+database "Interne Datenbank"{
+    frame "Tabelle"{
+        [Daten]
+    }
+}
+node "MS Project"{
+    [Sub Start]
+    [Sub Copy] --> [Function CopyFile]
+    [Sub Start] --> [Function link_python_excel]
+    [Arbeitskopie]
+}
+
+node "MS Excel"{
+    [Sub Start_Transfer] --> [Function link_python_project]
+    [Sub Transfer] --> [Daten] : aktualisiert
+
+}
+
+[Arbeitskopie]
+package "Python"{
+    [Function link_python_project] --> [export.py]
+    [export.py] --> [Sub Transfer] :sendet Daten
+    [Function link_python_excel] --> [import.py]
+    [Function CopyFile] --> [kopieren.py]
+    [import.py] --> [Arbeitskopie]:schreibt Daten
+    [kopieren.py] --> [Arbeitskopie]:erzeugt
+}
+
+
+@enduml

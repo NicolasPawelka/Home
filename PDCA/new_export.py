@@ -177,7 +177,7 @@ def add_Summary(TASKS, name,depth,date,budget):
     task = TASKS.Add()
     task.Manual = False
     task.Name = name
-    task.Start = date
+ #   task.Start = date
     task.OutlineLevel = depth
     EXCEL.Application.Run("Sync",task.GUID,task.Name)
     return 1
@@ -383,7 +383,8 @@ def main():
                 saved_depth = current_depth
             else:
                 date = WORKBOOK[DATABASE_NAME]['K'][index].value
-                if date == None or date.year < 2000:
+                print(date)
+                if date is None:
                     date = START_DATE
                 if is_summary(current_depth,saved_depth,next_depth) :
                     add_Summary(TASKS,current_name,current_depth,date,extract_budget(current_budget))
@@ -412,5 +413,5 @@ if __name__ == "__main__":
                 mpp_file_path = sys.argv[1]
                 init(mpp_file_path)
     else:
-        mpp_file_path = r"C:\Users\npawelka\Desktop\Beispiel.mpp"
+        mpp_file_path = r"C:\Users\npawelka\Desktop\PDCA_WorkingCopy.mpp"
         init(mpp_file_path)
