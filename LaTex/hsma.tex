@@ -1,0 +1,97 @@
+\documentclass[11pt,a4paper]{article}
+\input{preamble}
+\usepackage{blindtext}
+\usepackage{xfrac}
+
+\title{Hochschule Mannheim}
+\author{Nicolas Pawelka}
+\date{14.10.2022}
+
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+
+\end{abstract}
+\tableofcontents
+
+\section{Einleitung}
+Hallo das ist meine Einleitung.
+
+Hier kommt viel Information hin.
+
+Letzter Absatz in der Einleitung. In \ref{sec:Leitbild} ist das Leitbild der Hochschule Mannheim mit dem Schwerpunkt Lehre und...
+\section{Leitbild}\label{sec:Leitbild}
+\Blindtext[1]
+
+\subsection{Lehre und Forschung}
+\Blindtext[2]
+\subsection{Internationalisierung}
+\Blindtext[2]
+\subsection{Wissenschaftliche Weiterbildung}
+\Blindtext[2]
+\subsection{Regionaler und überregionaler Wissens- und Technologietransfer}
+\Blindtext[2]
+
+\section{Zahlen und Fakten}
+
+\begin{equation}
+ \sum_{i=1}^n i^2 = \frac{1}{6} \cdot n \cdot (n+1) \cdot (2n+1)
+\end{equation}
+\begin{equation}\label{eq:1}
+\lim_{n \to \infty} \sum_{k=0}^n q^k = \lim_{n \to \infty} \frac{1 - q^{n+1}}{1-q}
+\end{equation}
+\begin{equation}\label{eq:2}
+ = \frac{1}{1-q}
+\end{equation}
+
+Dabei gilt (\ref{eq:1}) für q < 1 wegen der geometrischen SUmmenformel. Die Grenzwertbetrachtung liefert dann (\ref{eq:2}).
+
+Wie wir in Tabelle \ref{tab:numbers} sehen ist die Hochschule Mannheim mit nur 5.200 Studierenden eine kleine Hochschule.
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|l|l|r|}
+\hline
+\textbf{Fakultäten} & \textbf{Studiengänge} & \textbf{Studierende} \\\hline\hline
+9 & 39 (insgesamt) & 5200
+\\\hline
+\end{tabular}
+\end{center}
+\caption{Zahlen der HS Mannheim}\label{tab:numbers}
+\end{table}
+In der Tabelle \ref{tab:Neue} können wir  sehen das viel mehr Leute im WS anfangen im Gegensatz zum Sommersemester...
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|l||l|r|}
+\hline
+\textbf{Neuimmatrikulierte} & \textbf{Wintersemester} & \textbf{Sommersemester}\\\hline\hline
+1894 & 1250 & 644
+\\\hline
+\end{tabular}
+\end{center}
+\caption{Anzahl der Neuimmatrikulierten}\label{tab:Neue}
+\end{table}
+ 
+ Wir haben ganz viele tolle Leute die Dinge erklären wie Tabelle \ref{tab:Mitarbeiter} zeigt..
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|l||l|r|}
+\hline
+\textbf{Professoren} & \textbf{Lehrbeauftragte} & \textbf{Sprachlehrkräfte}\\\hline\hline
+173 & 162 & 5
+\\\hline
+\end{tabular}
+\end{center}
+\caption{Anzahl der Mitarbeiter}\label{tab:Mitarbeiter}
+\end{table}
+\section{Impressionen}
+\section{Fazit}
+
+Zitieren geht ganz einfach \cite{Beningo} oder so \cite{Lehner}
+
+\bibliographystyle{plain}
+\bibliography{hsma}
+
+\end{document}
