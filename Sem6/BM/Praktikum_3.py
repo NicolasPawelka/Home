@@ -52,7 +52,7 @@ renderWindowInteractor.SetRenderWindow(renderWindow)
 
 renderer.AddActor(actor)
 renderer.AddActor(actor_new)
-#renderer.SetBackground(colors.GetColor3d('DarkGreen'))
+renderer.SetBackground(colors.GetColor3d('DarkGreen'))
 
 
 
