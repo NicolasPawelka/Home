@@ -10,7 +10,7 @@ from vtk import vtkRenderWindow, vtkRenderWindowInteractor, vtkMatrix4x4
 from vtkmodules.vtkCommonColor import vtkNamedColors
 import numpy as np
 
-def getRotateBitch(winkel,axis):
+def Rotate(winkel,axis):
     
     matrix = np.eye(4)
     vtk_matrix = vtkMatrix4x4()
@@ -51,7 +51,7 @@ mapper = vtkPolyDataMapper()
 mapper.SetInputConnection(cylinderSource.GetOutputPort())
 actor = vtkActor()
 actor.GetProperty().SetColor(colors.GetColor3d(farbe))
-actor.SetUserMatrix(getRotateBitch(45, "x"))
+actor.SetUserMatrix(Rotate(45, "x"))
 actor.SetMapper(mapper)
 
 mapper_new = vtkPolyDataMapper()

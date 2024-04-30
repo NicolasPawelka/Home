@@ -33,7 +33,40 @@ class Quaternionen:
         print(tmp)
     
     def rot(self):
+        matrix = np.zeros((3,3))
+        
+        matrix[0][0] = 2 * np.square(self.data[0]) + 2 * np.square(self.data[1]) - 1
+        matrix[0][1] = 2 * self.data[1] * self.data[2] - 2 * self.data[0] * self.data[3]
+        matrix[0][2] = 2 *self.data[1] * self.data[3] + 2 * self.data[0] * self.data[2]
+        matrix[1][0] = 2 * self.data[1] * self.data[2] + 2 * self.data[0] * self.data[3]
+        matrix[1][1] = 2 * np.square(self.data[0]) + 2 * np.square(self.data[2]) - 1
+        matrix[1][2] = 2 *self.data[2] * self.data[3] - 2 * self.data[0] * self.data[1]
+        matrix[2][0] = 2 *self.data[1] * self.data[3] - 2 * self.data[0] * self.data[2]
+        matrix[2][1] = 2 *self.data[2] * self.data[3] + 2 * self.data[0] * self.data[1]
+        matrix[2][2] = 2 * np.square(self.data[0]) + 2 * np.square(self.data[3]) - 1
+        
+        print(matrix)
+        
+        
+        
         return 0
+    
+    def angel(self):
+        m11 = 2 * np.square(self.data[0]) + 2 * np.square(self.data[1]) - 1 
+        m12 = 2 * self.data[1] * self.data[2] + 2 * self.data[0] * self.data[3]
+        m13 = 2 *self.data[1] * self.data[3] - 2 * self.data[0] * self.data[2]
+        m23 = 2 *self.data[2] * self.data[3] + 2 * self.data[0] * self.data[1]
+        m33 = 2 * np.square(self.data[0]) + 2 * np.square(self.data[3]) - 1 
+        
+        print(m13)
+        
+        alpha = np.arctan(m12/m11)
+        beta = np.arcsin(-m13)
+        gamma = np.arctan(m23/m33)
+        
+        erg = np.array([alpha,beta,gamma])
+        
+        print(erg)
         
     def show(self):
         print(self.data)
@@ -44,5 +77,8 @@ tmp_2 = Quaternionen(2, 3, 4, 5)
 tmp.show()
 tmp.norm()
 tmp.produkt(tmp_2)
+tmp.angel()
+tmp.rot()
+
         
         
