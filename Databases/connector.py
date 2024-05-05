@@ -22,7 +22,6 @@ finally:
     if 'connection' in locals() and connection.is_connected():
         connection.close()
         print("Connection closed.")
-import mysql.connector
 
 try:
     connection = mysql.connector.connect(
