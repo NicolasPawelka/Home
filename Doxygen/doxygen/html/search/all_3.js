@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['4_20bug_0',['4 bug',['../index.html#autotoc_md11',1,'4. Bug'],['../bug.html#_bug000002',1,'4. Bug']]]
+  ['ggt_7',['ggt',['../class_bruch.html#a13fc58380d9e596c1d9e8c71a99965d2',1,'Bruch']]]
 ];

@@ -42,98 +42,41 @@ Dieser Text kann mittels der Button ganz rechts kopiert und bearbeitet werden!
 Hiermit können Sie Notizen erstellen als Hinweise oder Erklärungen zu den dargestellten Funktionen.
 @note
 
-<details>
-  <summary>Click to reveal source code</summary>
-
-  ```
-@note Diese Klasse wurde zu Demo Zwecken erstellt.
-@code int var = 0; @endcode
-Hiermit können sie Notizen erstellen als Hinweise oder Erklärungen zu den dargestellten Funktionen.
-@note
-  ```
 
 #### 2. Warnings
 @warning Hiermit können Sie auf potentielle Probleme und Fehler hinweisen! 
 
-<details>
-  <summary>Click to reveal source code</summary>
-
-  ```
- @warning Hiermit können Sie auf potentielle Probleme und Fehler hinweisen!
-  ```
     
 #### 3. Deprecated
 @deprecated Dieser Abschnitt weist auf veraltete Funktionen hin.
 
-<details>
-  <summary>Click to reveal source code</summary>
-
-  ```
-  @deprecated Dieser Abschnitt weist auf veraltete Funktionen hin.
-  ```
 
 
 #### 4. Bug
 @bug Die ist ein Beispiel Bug.
 
-<details>
-  <summary>Click to reveal source code</summary>
-
-  ```
-  @bug Dies ist ein Beispiel Bug.
-  ```
 
 
 #### 5. Unveränderlich
 @invariant Dies ist eine unveränderliche Größe.
 
-<details>
-  <summary>Click to reveal source code</summary>
-
-  ```
-  @invariant Dies ist eine unveränderliche Größe.
-  ```
 
 
 #### 6. Bedingung
 @pre Dies ist eine Bedingung vor der Ausführung des Codes.
 
-<details>
-  <summary>Click to reveal source code</summary>
-
-  ```
- @pre Dies ist eine Bedingung vor der Ausführung des Codes.
-  ```
 
 #### 7. Nachbedingung
 @post Dies eine Bedinung nach der Ausführung des Codes.
 
-<details>
-  <summary>Click to reveal source code</summary>
-
-  ```
- @post Dies eine Bedinung nach der Ausführung des Codes.
-  ```
 
 #### 8. Zu erledigen
 @todo Weitere zu bearbeitende Themen.
 
-<details>
-  <summary>Click to reveal source code</summary>
-
-  ```
- @todo Weiter zu bearbeitende Themen
-  ```
 
 #### 9. Bemerkungen
 @remark Viel Spaß mit dem Theme.
 
-<details>
-  <summary>Click to reveal source code</summary>
-
-  ```
-  @remark Viel Spaß mit dem Theme
-  ```
 
 #### 10. Verzeichnis
 <table>

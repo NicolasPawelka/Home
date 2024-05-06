@@ -454,6 +454,7 @@ dl.remark {
     position: absolute;
     top:5px;
     right:250px;
+    visibility: hidden;
 }
 /* ######## Copy and Edit Button ######## */
 
@@ -473,6 +474,7 @@ dl.remark {
 }
  #nav-tree{
 	background-color: transparent;
+    background-image: none;
  }
  #nav-tree .selected{
 	text-shadow: none;

@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['demo_0',['Demo',['../index.html#autotoc_md5',1,'']]],
-  ['deprecated_1',['deprecated',['../index.html#autotoc_md10',1,'3. Deprecated'],['../deprecated.html#_deprecated000002',1,'3. Deprecated']]],
-  ['deprecated_20list_2',['Deprecated List',['../deprecated.html',1,'']]],
-  ['dokumentation_3',['NewTec Dokumentation',['../index.html',1,'']]]
+  ['_7etest_21',['~Test',['../class_test.html#a2b0a62f1e667bbe8d8cb18d785bfa991',1,'Test']]],
+  ['_7etime_22',['~Time',['../class_time.html#a1e92dbe963fa3cdd6bea207680f5f6d1',1,'Time']]]
 ];
