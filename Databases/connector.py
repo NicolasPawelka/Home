@@ -1,46 +1,26 @@
-import mysql.connector
+import mariadb 
 
-try:
-    # Establish connection
-    connection = mysql.connector.connect(
-        host="localhost",
-        user="your_username",
-        password="your_password"
-    )
+conn = mariadb.connect(
+    user="root",
+    password="Leon1212.",
+    host="localhost",
+    database="test")
+cur = conn.cursor() 
+
+#retrieving information 
+some_name = "Georgi" 
+cur.execute("SELECT first_name,last_name FROM employees WHERE first_name=?", (some_name,)) 
+
+for first_name, last_name in cur: 
+    print(f"First name: {first_name}, Last name: {last_name}")
     
-    if connection.is_connected():
-        print("Connected to MariaDB")
-    else:
-        print("Failed to connect to MariaDB")
+#insert information 
+try: 
+    cur.execute("INSERT INTO employees (first_name,last_name) VALUES (?, ?)", ("Maria","DB")) 
+except mariadb.Error as e: 
+    print(f"Error: {e}")
 
-    # Your code to work with the database goes here
-
-except mysql.connector.Error as err:
-    print("Error:", err)
-
-finally:
-    if 'connection' in locals() and connection.is_connected():
-        connection.close()
-        print("Connection closed.")
-
-try:
-    connection = mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="Leon1212"
-    )
-    cursor = connection.cursor()
-
-    # Create database
-    cursor.execute("CREATE DATABASE mydatabase")
-
-    print("Database created successfully.")
-
-except mysql.connector.Error as error:
-    print("Error:", error)
-
-finally:
-    if connection.is_connected():
-        cursor.close()
-        connection.close()
-        print("Connection closed.")
+conn.commit() 
+print(f"Last Inserted ID: {cur.lastrowid}")
+    
+conn.close()
