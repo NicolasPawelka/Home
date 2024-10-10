@@ -1,0 +1,57 @@
+\contentsline {chapter}{\numberline {1}New\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tec Dokumentation}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Inhaltsverzeichnis}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Übersicht}{1}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Funktionen}{1}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Konfiguration}{2}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Demo}{2}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Kopier und Bearbeitungs Beispiel}{2}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}Besondere Hinweise}{2}{subsection.1.5.2}%
+\contentsline {subsubsection}{\numberline {1.5.2.1}1. Notes}{2}{subsubsection.1.5.2.1}%
+\contentsline {subsubsection}{\numberline {1.5.2.2}2. Warnings}{2}{subsubsection.1.5.2.2}%
+\contentsline {subsubsection}{\numberline {1.5.2.3}3. Deprecated}{2}{subsubsection.1.5.2.3}%
+\contentsline {subsubsection}{\numberline {1.5.2.4}4. Bug}{2}{subsubsection.1.5.2.4}%
+\contentsline {subsubsection}{\numberline {1.5.2.5}5. Unveränderlich}{2}{subsubsection.1.5.2.5}%
+\contentsline {subsubsection}{\numberline {1.5.2.6}6. Bedingung}{3}{subsubsection.1.5.2.6}%
+\contentsline {subsubsection}{\numberline {1.5.2.7}7. Nachbedingung}{3}{subsubsection.1.5.2.7}%
+\contentsline {subsubsection}{\numberline {1.5.2.8}8. Zu erledigen}{3}{subsubsection.1.5.2.8}%
+\contentsline {subsubsection}{\numberline {1.5.2.9}9. Bemerkungen}{3}{subsubsection.1.5.2.9}%
+\contentsline {subsubsection}{\numberline {1.5.2.10}10. Verzeichnis}{3}{subsubsection.1.5.2.10}%
+\contentsline {chapter}{\numberline {2}Deprecated List}{5}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Bug List}{7}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Todo List}{9}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Module Index}{11}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Modules}{11}{section.5.1}%
+\contentsline {chapter}{\numberline {6}Class Index}{13}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Class List}{13}{section.6.1}%
+\contentsline {chapter}{\numberline {7}Module Documentation}{15}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Bruch testen}{15}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Detailed Description}{15}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}Bruchklasse}{15}{subsection.7.1.2}%
+\contentsline {subsubsection}{\numberline {7.1.2.1}Konstruktor}{15}{subsubsection.7.1.2.1}%
+\contentsline {subsubsection}{\numberline {7.1.2.2}Wert abrufen}{16}{subsubsection.7.1.2.2}%
+\contentsline {subsubsection}{\numberline {7.1.2.3}Multiplikation}{16}{subsubsection.7.1.2.3}%
+\contentsline {subsection}{\numberline {7.1.3}Testklasse}{16}{subsection.7.1.3}%
+\contentsline {subsubsection}{\numberline {7.1.3.1}Tests ausführen}{16}{subsubsection.7.1.3.1}%
+\contentsline {chapter}{\numberline {8}Class Documentation}{17}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Bruch Class Reference}{17}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}Detailed Description}{17}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}Constructor \& Destructor Documentation}{17}{subsection.8.1.2}%
+\contentsline {subsubsection}{\numberline {8.1.2.1}Bruch()}{17}{subsubsection.8.1.2.1}%
+\contentsline {subsection}{\numberline {8.1.3}Member Function Documentation}{18}{subsection.8.1.3}%
+\contentsline {subsubsection}{\numberline {8.1.3.1}ggt()}{18}{subsubsection.8.1.3.1}%
+\contentsline {subsubsection}{\numberline {8.1.3.2}operator$\ast $=()}{19}{subsubsection.8.1.3.2}%
+\contentsline {section}{\numberline {8.2}Test Class Reference}{19}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Detailed Description}{19}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Constructor \& Destructor Documentation}{20}{subsection.8.2.2}%
+\contentsline {subsubsection}{\numberline {8.2.2.1}Test()}{20}{subsubsection.8.2.2.1}%
+\contentsline {section}{\numberline {8.3}Time Class Reference}{20}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}Detailed Description}{20}{subsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.3.2}Constructor \& Destructor Documentation}{21}{subsection.8.3.2}%
+\contentsline {subsubsection}{\numberline {8.3.2.1}Time()}{21}{subsubsection.8.3.2.1}%
+\contentsline {subsubsection}{\numberline {8.3.2.2}$\sim $Time()}{21}{subsubsection.8.3.2.2}%
+\contentsline {subsection}{\numberline {8.3.3}Member Function Documentation}{22}{subsection.8.3.3}%
+\contentsline {subsubsection}{\numberline {8.3.3.1}hour()}{22}{subsubsection.8.3.3.1}%
+\contentsline {subsubsection}{\numberline {8.3.3.2}just\_minutes()}{22}{subsubsection.8.3.3.2}%
+\contentsline {subsubsection}{\numberline {8.3.3.3}just\_seconds()}{22}{subsubsection.8.3.3.3}%
+\contentsline {subsubsection}{\numberline {8.3.3.4}minute()}{22}{subsubsection.8.3.3.4}%
+\contentsline {subsubsection}{\numberline {8.3.3.5}second()}{23}{subsubsection.8.3.3.5}%

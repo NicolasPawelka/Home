@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['6_20bedingung_0',['6. Bedingung',['../index.html#autotoc_md13',1,'']]]
+  ['just_5fminutes_9',['just_minutes',['../class_time.html#ae455f9dc6a87b3d527461acd91850d3e',1,'Time']]],
+  ['just_5fseconds_10',['just_seconds',['../class_time.html#a926ce47bd37a37f32020de38f4530ee9',1,'Time']]]
 ];

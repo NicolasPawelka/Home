@@ -36,6 +36,7 @@ html {
     --side-nav-margin-left: 25px;
     --links-contents-size: 15px;
 
+
     /* Projectbrief Creating Safety with passion */
 
     --projectbrief-left: 20px;
@@ -454,6 +455,7 @@ dl.remark {
     position: absolute;
     top:5px;
     right:250px;
+    visibility: hidden;
 }
 /* ######## Copy and Edit Button ######## */
 
@@ -473,6 +475,7 @@ dl.remark {
 }
  #nav-tree{
 	background-color: transparent;
+    background-image: none;
  }
  #nav-tree .selected{
 	text-shadow: none;

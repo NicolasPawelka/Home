@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.2.2)  6 FEB 2024 08:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex 2024.3.27)  6 MAY 2024 10:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**../latex/refman.tex
-(../latex/refman.tex
+**refman.tex
+(./refman.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21>
 (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
@@ -39,10 +39,17 @@ Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 \extratabsurround=\skip49
 \backup@length=\skip50
 ))
-(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-package info suppressed
-)
-(./doxygen.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/fixltx2e.sty
+Package: fixltx2e 2016/12/29 v2.1a fixes to LaTeX (obsolete)
+Applying: [2015/01/01] Old fixltx2e package on input line 46.
+
+
+Package fixltx2e Warning: fixltx2e is not required with releases after 2015
+(fixltx2e)                All fixes are now in the LaTeX kernel.
+(fixltx2e)                See the latexrelease package for details.
+
+Already applied: [0000/00/00] Old fixltx2e package on input line 53.
+) (./doxygen.sty
 Package: doxygen 
  (/usr/share/texlive/texmf-dist/tex/latex/base/alltt.sty
 Package: alltt 2021/01/29 v2.0g defines alltt environment
@@ -80,10 +87,10 @@ Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 227.
+Package xcolor Info: Driver file: dvips.def on input line 227.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/dvips.def
+File: dvips.def 2017/06/20 v3.1d Graphics/color driver for dvips
 )
 (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
@@ -92,7 +99,6 @@ Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
 )
 \rownum=\count198
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
 Package xcolor Info: Model `RGB' extended on input line 1368.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
 Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
@@ -129,21 +135,2979 @@ rsion for doxygen
 Type X to quit or <RETURN> to proceed,
 or enter new name. (Default extension: sty)
 
-Enter file name: 
-! Emergency stop.
-<read *> 
-         
-l.69 \RequirePackage{varwidth}[2009/03/30]
-                                          ^^M
-End of file on the terminal!
+Enter file name: refman.pdf
 
- 
+! LaTeX Error: File `refman.pdf' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: pdf)
+
+Enter file name: 
+\c@taburow=\count270
+\tabu@nbcols=\count271
+\tabu@cnt=\count272
+\tabu@Xcol=\count273
+\tabu@alloc=\count274
+\tabu@nested=\count275
+\tabu@target=\dimen144
+\tabu@spreadtarget=\dimen145
+\tabu@naturalX=\dimen146
+\tabucolX=\dimen147
+\tabu@Xsum=\dimen148
+\extrarowdepth=\dimen149
+\abovetabulinesep=\dimen150
+\belowtabulinesep=\dimen151
+\tabustrutrule=\dimen152
+\tabu@thebody=\toks23
+\tabu@footnotes=\toks24
+\tabu@box=\box56
+\tabu@arstrutbox=\box57
+\tabu@hleads=\box58
+\tabu@vleads=\box59
+\tabu@cellskip=\skip59
+) (/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2021/12/21 4.1b verbatim text (tvz,hv)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks25
+)
+\FV@CodeLineNo=\count276
+\FV@InFile=\read3
+\FV@TabBox=\box60
+\c@FancyVerbLine=\count277
+\FV@StepNumber=\count278
+\FV@OutFile=\write3
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+\TX@col@width=\dimen153
+\TX@old@table=\dimen154
+\TX@old@col=\dimen155
+\TX@target=\dimen156
+\TX@delta=\dimen157
+\TX@cols=\count279
+\TX@ftn=\toks26
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
+\c@tracingmulticols=\count280
+\mult@box=\box61
+\multicol@leftmargin=\dimen158
+\c@unbalance=\count281
+\c@collectmore=\count282
+\doublecol@number=\count283
+\multicoltolerance=\count284
+\multicolpretolerance=\count285
+\full@width=\dimen159
+\page@free=\dimen160
+\premulticols=\dimen161
+\postmulticols=\dimen162
+\multicolsep=\skip60
+\multicolbaselineskip=\skip61
+\partial@page=\box62
+\last@line=\box63
+\maxbalancingoverflow=\dimen163
+\mult@rightbox=\box64
+\mult@grightbox=\box65
+\mult@firstbox=\box66
+\mult@gfirstbox=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\c@minrows=\count286
+\c@columnbadness=\count287
+\c@finalcolumnbadness=\count288
+\last@try=\dimen164
+\multicolovershoot=\dimen165
+\multicolundershoot=\dimen166
+\mult@nat@firstbox=\box104
+\colbreak@box=\box105
+\mc@col@check@num=\count289
+)
+
+! LaTeX Error: File `multirow.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
+
+! LaTeX Error: File `hanging.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+
+! LaTeX Error: File `adjustbox.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks27
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+
+! LaTeX Error: File `stackengine.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
+
+! LaTeX Error: File `ulem.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
+\xrefbox=\box106
+\xreflength=\skip62
+\CodeWidthChar=\skip63
+\CodeHeightChar=\skip64
+\DoxyCodeWidth=\skip65
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: dvips.def on input line 107.
+)
+\Gin@req@height=\dimen167
+\Gin@req@width=\dimen168
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks28
+\inpenc@posthook=\toks29
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
+Package: makeidx 2021/10/04 v1.0m Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/latex/wasysym/wasysym.sty
+Package: wasysym 2020/01/19 v2.4 Wasy-2 symbol support package
+\symwasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
+(Font)                  U/wasy/m/n --> U/wasy/b/n on input line 93.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/helvet.sty
+Package: helvet 2020/03/25 PSNFSS-v9.3 (WaS) 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/courier.sty
+Package: courier 2020/03/25 PSNFSS-v9.3 (WaS) 
+)
+
+! LaTeX Error: File `sectsty.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
+! Undefined control sequence.
+<recently read> \allsectionsfont 
+                                 
+l.28 \allsectionsfont
+                     {%
+? 
+
+LaTeX Font Warning: Font shape `T1/cmr/bc/n' undefined
+(Font)              using `T1/cmr/m/n' instead on input line 29.
+
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count290
+\Gm@cntv=\count291
+\c@Gm@tempcnt=\count292
+\Gm@bindingoffset=\dimen169
+\Gm@wd@mp=\dimen170
+\Gm@odd@mp=\dimen171
+\Gm@even@mp=\dimen172
+\Gm@layoutwidth=\dimen173
+\Gm@layoutheight=\dimen174
+\Gm@layouthoffset=\dimen175
+\Gm@layoutvoffset=\dimen176
+\Gm@dimlist=\toks30
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
+rs
+\f@nch@headwidth=\skip66
+\f@nch@O@elh=\skip67
+\f@nch@O@erh=\skip68
+\f@nch@O@olh=\skip69
+\f@nch@O@orh=\skip70
+\f@nch@O@elf=\skip71
+\f@nch@O@erf=\skip72
+\f@nch@O@olf=\skip73
+\f@nch@O@orf=\skip74
+)
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip75
+\bibsep=\skip76
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count293
+)
+
+! LaTeX Error: File `tocloft.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
+\@indexfile=\write4
+\openout4 = `refman.idx'.
+
+Writing index file refman.idx
+
+! LaTeX Error: File `newunicodechar.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
+! Undefined control sequence.
+<recently read> \newunicodechar 
+                                
+l.114   \newunicodechar
+                       {⁻}{${}^{-}$}% Superscript minus
+? 
+
+! LaTeX Error: Unicode character ⁻ (U+207B)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.114   \newunicodechar{⁻
+                           }{${}^{-}$}% Superscript minus
+? 
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.114   \newunicodechar{⁻}{$
+                              {}^{-}$}% Superscript minus
+? 
+LaTeX Font Info:    Trying to load font information for U+msa on input line 114
+.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 114
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 11
+4.
+
+(/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
+File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
+)
+! Undefined control sequence.
+l.115   \newunicodechar
+                       {²}{${}^{2}$}% Superscript two
+? 
+! Undefined control sequence.
+l.116   \newunicodechar
+                       {³}{${}^{3}$}% Superscript three
+? 
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode is ignored in DVI mode.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+)
+\@linkdim=\dimen177
+\Hy@linkcounter=\count294
+\Hy@pagecounter=\count295
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
+File: hyperref-langpatches.def 2021-06-07 v7.00m Hyperref: patches for babel la
+nguages
+)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count296
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing ON on input line 4210.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4445.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/backref.sty
+Package: backref 2021/02/04 v1.41 Bibliographical back referencing
+
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+))
+\c@Hy@tempcnt=\count297
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4804.
+\XeTeXLinkMargin=\dimen178
+
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+)
+\Fld@menulength=\count298
+\Field@Width=\dimen179
+\Fld@charsize=\dimen180
+Package hyperref Info: Hyper figures OFF on input line 6076.
+Package hyperref Info: Link nesting OFF on input line 6081.
+Package hyperref Info: Hyper index ON on input line 6084.
+Package hyperref Info: backreferencing ON on input line 6089.
+Package hyperref Info: Link coloring OFF on input line 6096.
+Package hyperref Info: Link coloring with OCG OFF on input line 6101.
+Package hyperref Info: PDF/A mode OFF on input line 6106.
+LaTeX Info: Redefining \ref on input line 6146.
+LaTeX Info: Redefining \pageref on input line 6150.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count299
+\c@Item=\count300
+\c@Hfootnote=\count301
+
+
+LaTeX Warning: Command \LT@p@ftntext  has changed.
+               Check if current package is valid.
+
+)
+Package hyperref Info: Driver: hdvips.
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hdvips.def
+File: hdvips.def 2021-06-07 v7.00m Hyperref driver for dvips
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pdfmark.def
+File: pdfmark.def 2021-06-07 v7.00m Hyperref definitions for pdfmark specials
+\pdf@docset=\toks31
+\pdf@box=\box107
+\pdf@toks=\toks32
+\pdf@defaulttoks=\toks33
+\HyField@AnnotCount=\count302
+\Fld@listcount=\count303
+\c@bookmark@seq@number=\count304
+\Hy@SectionHShift=\skip77
+))
+Package hyperref Info: Option `colorlinks' set `true' on input line 134.
+Package hyperref Info: Option `unicode' set `true' on input line 134.
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen181
+\captionmargin@=\dimen182
+\captionwidth=\dimen183
+\caption@tempdima=\dimen184
+\caption@indent=\dimen185
+\caption@parindent=\dimen186
+\caption@hangindent=\dimen187
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count305
+\c@continuedfloat=\count306
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
+))
+
+! LaTeX Error: File `etoc.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
+! Undefined control sequence.
+<recently read> \etocsettocstyle 
+                                 
+l.145 \etocsettocstyle
+                      {\doxytocparskip}{\doxynormalparskip}
+? 
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 14
+9.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
+File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
+)
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 149.
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
+File: l3backend-dvips.def 2022-01-12 L3 backend support: dvips
+\l__pdf_internal_box=\box108
+\g__pdf_backend_object_int=\count307
+\l__pdf_backend_content_box=\box109
+\l__pdf_backend_model_box=\box110
+\g__pdf_backend_annotation_int=\count308
+\g__pdf_backend_link_int=\count309
+\g__pdf_backend_link_sf_int=\count310
+)
+No file refman.aux.
+\openout1 = `refman.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+*geometry* driver: auto-detecting
+*geometry* detected driver: dvips
+*geometry* verbose mode - [ preamble ] result:
+* driver: dvips
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=702.78308pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-31.2056pt
+* \headheight=12.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=25.29494pt
+* \marginparwidth=125.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package hyperref Info: Link coloring ON on input line 149.
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count311
+)
+LaTeX Info: Redefining \ref on input line 149.
+LaTeX Info: Redefining \pageref on input line 149.
+LaTeX Info: Redefining \nameref on input line 149.
+\@outlinefile=\write5
+\openout5 = `refman.out'.
+
+
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
+Package backref Info: ** backref set up for natbib ** on input line 149.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+Package hyperref Info: Option `pageanchor' set `false' on input line 156.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 156.
+
+Package hyperref Info: Option `unicode' set `true' on input line 156.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 8.99994pt on input line 158.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 6.29996pt on input line 158.
+[1
+
+] [2
+
+]
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 12.9599pt on input line 161.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 10.79993pt on input line 161.
+ [1] [2
+
+]
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 22.39185pt on input line 168.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 22.39185pt on input line 168.
+\tf@toc=\write6
+\openout6 = `refman.toc'.
+
+ [1
+
+] [2
+
+]
+Package hyperref Info: Option `pageanchor' set `true' on input line 171.
+
+Chapter 1.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 18.66588pt on input line 174.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 18.66588pt on input line 174.
+(./index.tex
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 6.29996pt on input line 3.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 12.9599pt on input line 3.
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 6
+.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
+File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
+)
+LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 6.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 6.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+) [1
+
+]
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 10.79993pt on input line 24.
+
+! Undefined control sequence.
+\DoxyCodeLine #1->\hangpara 
+                            {\DoxyCodeWidth }{1}{#1}\par 
+l.27 ...anz rechts kopiert und bearbeitet werden!}
+                                                  
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.27 ...anz rechts kopiert und bearbeitet werden!}
+                                                  
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.27 ...anz rechts kopiert und bearbeitet werden!}
+                                                  
+? 
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 8.99994pt on input line 32.
+
+Underfull \hbox (badness 10000) detected at line 32
+[][][]
+ []
+
+! Undefined control sequence.
+\DoxyCodeLine #1->\hangpara 
+                            {\DoxyCodeWidth }{1}{#1}\par 
+l.35 \DoxyCodeLine{int var = 0; }
+                                 
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.35 \DoxyCodeLine{int var = 0; }
+                                 
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.35 \DoxyCodeLine{int var = 0; }
+                                 
+? 
+
+Underfull \hbox (badness 10000) detected at line 43
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 53
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 57
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 61
+[][][]
+ []
+
+[2]
+Underfull \hbox (badness 10000) detected at line 68
+[][][]
+ []
+
+
+! LaTeX Error: Environment varwidth undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.83 \end{longtabu}
+                   
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   \let 
+l.83 \end{longtabu}
+                   
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \let 
+l.83 \end{longtabu}
+                   
+? 
+! Undefined control sequence.
+\@startpbox ...u@FV@ListProcessLine \narrowragged 
+                                                  \arraybackslash \parfillsk...
+l.83 \end{longtabu}
+                   
+? 
+
+! LaTeX Error: \begin{longtabu} on input line 73 ended by \end{varwidth}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.83 \end{longtabu}
+                   
+? 
+
+! LaTeX Error: Environment varwidth undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.83 \end{longtabu}
+                   
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   \let 
+l.83 \end{longtabu}
+                   
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \let 
+l.83 \end{longtabu}
+                   
+? 
+! Undefined control sequence.
+\@startpbox ...u@FV@ListProcessLine \narrowragged 
+                                                  \arraybackslash \parfillsk...
+l.83 \end{longtabu}
+                   
+? 
+
+! LaTeX Error: \begin{longtabu} on input line 73 ended by \end{varwidth}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.83 \end{longtabu}
+                   
+? 
+
+! LaTeX Error: Environment varwidth undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.83 \end{longtabu}
+                   
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   \let 
+l.83 \end{longtabu}
+                   
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \let 
+l.83 \end{longtabu}
+                   
+? 
+! Undefined control sequence.
+\@startpbox ...u@FV@ListProcessLine \narrowragged 
+                                                  \arraybackslash \parfillsk...
+l.83 \end{longtabu}
+                   
+? 
+
+! LaTeX Error: \begin{longtabu} on input line 73 ended by \end{varwidth}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.83 \end{longtabu}
+                   
+? 
+
+! LaTeX Error: Environment varwidth undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.83 \end{longtabu}
+                   
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   \let 
+l.83 \end{longtabu}
+                   
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \let 
+l.83 \end{longtabu}
+                   
+? 
+! Undefined control sequence.
+\@startpbox ...u@FV@ListProcessLine \narrowragged 
+                                                  \arraybackslash \parfillsk...
+l.83 \end{longtabu}
+                   
+? 
+
+! LaTeX Error: \begin{longtabu} on input line 73 ended by \end{varwidth}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.83 \end{longtabu}
+                   
+? 
+
+! LaTeX Error: Environment varwidth undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.83 \end{longtabu}
+                   
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   \let 
+l.83 \end{longtabu}
+                   
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \let 
+l.83 \end{longtabu}
+                   
+? 
+! Undefined control sequence.
+\@startpbox ...u@FV@ListProcessLine \narrowragged 
+                                                  \arraybackslash \parfillsk...
+l.83 \end{longtabu}
+                   
+? 
+
+! LaTeX Error: \begin{longtabu} on input line 73 ended by \end{varwidth}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.83 \end{longtabu}
+                   
+? 
+
+! LaTeX Error: Environment varwidth undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.83 \end{longtabu}
+                   
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   \let 
+l.83 \end{longtabu}
+                   
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \let 
+l.83 \end{longtabu}
+                   
+? 
+! Undefined control sequence.
+\@startpbox ...u@FV@ListProcessLine \narrowragged 
+                                                  \arraybackslash \parfillsk...
+l.83 \end{longtabu}
+                   
+? 
+
+! LaTeX Error: \begin{longtabu} on input line 73 ended by \end{varwidth}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.83 \end{longtabu}
+                   
+? 
+) [3] [4
+
+]
+Chapter 2.
+(./deprecated.tex) [5] [6
+
+]
+Chapter 3.
+(./bug.tex) [7] [8
+
+]
+Chapter 4.
+(./todo.tex) [9] [10
+
+]
+Chapter 5.
+(./modules.tex
+
+LaTeX Warning: Reference `group___group_name' on page 11 undefined on input lin
+e 3.
+
+) [11] [12
+
+]
+Chapter 6.
+(./annotated.tex
+
+LaTeX Warning: Reference `class_bruch' on page 13 undefined on input line 3.
+
+
+LaTeX Warning: Reference `class_test' on page 13 undefined on input line 4.
+
+
+LaTeX Warning: Reference `class_time' on page 13 undefined on input line 5.
+
+) [13] [14
+
+]
+Chapter 7.
+(./group___group_name.tex
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 8.09995pt on input line 12.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 12.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 8.09995pt on input line 12.
+
+! Undefined control sequence.
+\DoxyCodeLine #1->\hangpara 
+                            {\DoxyCodeWidth }{1}{#1}\par 
+l.38 ...textcolor{keywordtype}{int} denominator);}
+                                                  
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.38 ...textcolor{keywordtype}{int} denominator);}
+                                                  
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.38 ...textcolor{keywordtype}{int} denominator);}
+                                                  
+? 
+! Undefined control sequence.
+\DoxyCodeLine #1->\hangpara 
+                            {\DoxyCodeWidth }{1}{#1}\par 
+l.46 ...e} getValue() \textcolor{keyword}{const};}
+                                                  
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.46 ...e} getValue() \textcolor{keyword}{const};}
+                                                  
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.46 ...e} getValue() \textcolor{keyword}{const};}
+                                                  
+? 
+! Undefined control sequence.
+\DoxyCodeLine #1->\hangpara 
+                            {\DoxyCodeWidth }{1}{#1}\par 
+l.54 ...ch}}\& other) \textcolor{keyword}{const};}
+                                                  
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.54 ...ch}}\& other) \textcolor{keyword}{const};}
+                                                  
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.54 ...ch}}\& other) \textcolor{keyword}{const};}
+                                                  
+? 
+[15]
+! Undefined control sequence.
+\DoxyCodeLine #1->\hangpara 
+                            {\DoxyCodeWidth }{1}{#1}\par 
+l.63 ...\textcolor{keywordtype}{void} runTests();}
+                                                  
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.63 ...\textcolor{keywordtype}{void} runTests();}
+                                                  
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.63 ...\textcolor{keywordtype}{void} runTests();}
+                                                  
+? 
+) [16]
+Chapter 8.
+(./class_bruch.tex
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 7.19995pt on input line 34.
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 34.
+
+
+! LaTeX Error: Environment varwidth undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.46 \end{DoxyParams}
+                     
+
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   \let 
+l.46 \end{DoxyParams}
+                     
+
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \let 
+l.46 \end{DoxyParams}
+                     
+
+? 
+! Undefined control sequence.
+\@startpbox ...u@FV@ListProcessLine \narrowragged 
+                                                  \arraybackslash \parfillsk...
+l.46 \end{DoxyParams}
+                     
+
+? 
+
+! LaTeX Error: \begin{longtabu*} on input line 41 ended by \end{varwidth}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.46 \end{DoxyParams}
+                     
+
+? 
+
+! LaTeX Error: Environment varwidth undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.46 \end{DoxyParams}
+                     
+
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   \let 
+l.46 \end{DoxyParams}
+                     
+
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \let 
+l.46 \end{DoxyParams}
+                     
+
+? 
+! Undefined control sequence.
+\@startpbox ...u@FV@ListProcessLine \narrowragged 
+                                                  \arraybackslash \parfillsk...
+l.46 \end{DoxyParams}
+                     
+
+? 
+
+! LaTeX Error: \begin{longtabu*} on input line 41 ended by \end{varwidth}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.46 \end{DoxyParams}
+                     
+
+? 
+
+! LaTeX Error: Environment varwidth undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.46 \end{DoxyParams}
+                     
+
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   \let 
+l.46 \end{DoxyParams}
+                     
+
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \let 
+l.46 \end{DoxyParams}
+                     
+
+? 
+! Undefined control sequence.
+\@startpbox ...u@FV@ListProcessLine \narrowragged 
+                                                  \arraybackslash \parfillsk...
+l.46 \end{DoxyParams}
+                     
+
+? 
+
+! LaTeX Error: \begin{longtabu*} on input line 41 ended by \end{varwidth}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.46 \end{DoxyParams}
+                     
+
+? 
+
+! LaTeX Error: Environment varwidth undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.46 \end{DoxyParams}
+                     
+
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   \let 
+l.46 \end{DoxyParams}
+                     
+
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \let 
+l.46 \end{DoxyParams}
+                     
+
+? 
+! Undefined control sequence.
+\@startpbox ...u@FV@ListProcessLine \narrowragged 
+                                                  \arraybackslash \parfillsk...
+l.46 \end{DoxyParams}
+                     
+
+? 
+
+! LaTeX Error: \begin{longtabu*} on input line 41 ended by \end{varwidth}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.46 \end{DoxyParams}
+                     
+
+? 
+
+! LaTeX Error: Environment varwidth undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.46 \end{DoxyParams}
+                     
+
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   \let 
+l.46 \end{DoxyParams}
+                     
+
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \let 
+l.46 \end{DoxyParams}
+                     
+
+? 
+! Undefined control sequence.
+\@startpbox ...u@FV@ListProcessLine \narrowragged 
+                                                  \arraybackslash \parfillsk...
+l.46 \end{DoxyParams}
+                     
+
+? 
+
+! LaTeX Error: \begin{longtabu*} on input line 41 ended by \end{varwidth}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.46 \end{DoxyParams}
+                     
+
+? 
+
+! LaTeX Error: Environment varwidth undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.46 \end{DoxyParams}
+                     
+
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   \let 
+l.46 \end{DoxyParams}
+                     
+
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \let 
+l.46 \end{DoxyParams}
+                     
+
+? 
+! Undefined control sequence.
+\@startpbox ...u@FV@ListProcessLine \narrowragged 
+                                                  \arraybackslash \parfillsk...
+l.46 \end{DoxyParams}
+                     
+
+? 
+
+! LaTeX Error: \begin{longtabu*} on input line 41 ended by \end{varwidth}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.46 \end{DoxyParams}
+                     
+
+? 
+[17
+
+]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 8.1 on input line 46.
+
+
+Underfull \hbox (badness 10000) detected at line 47
+[][][]
+ []
+
+! Undefined control sequence.
+\DoxyCodeLine #1->\hangpara 
+                            {\DoxyCodeWidth }{1}{#1}\par 
+l.50 ...ine{\textcolor{keywordtype}{int} var = 0;}
+                                                  
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.50 ...ine{\textcolor{keywordtype}{int} var = 0;}
+                                                  
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.50 ...ine{\textcolor{keywordtype}{int} var = 0;}
+                                                  
+? 
+! Undefined control sequence.
+\DoxyCodeLine #1->\hangpara 
+                            {\DoxyCodeWidth }{1}{#1}\par 
+l.57 ...0, \textcolor{keywordtype}{int} n = 1) \{}
+                                                  
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.57 ...0, \textcolor{keywordtype}{int} n = 1) \{}
+                                                  
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.57 ...0, \textcolor{keywordtype}{int} n = 1) \{}
+                                                  
+? 
+! Undefined control sequence.
+\DoxyCodeLine #1->\hangpara 
+                            {\DoxyCodeWidth }{1}{#1}\par 
+l.58 ...    \textcolor{keywordtype}{int} var = 0;}
+                                                  
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.58 ...    \textcolor{keywordtype}{int} var = 0;}
+                                                  
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.58 ...    \textcolor{keywordtype}{int} var = 0;}
+                                                  
+? 
+! Undefined control sequence.
+\DoxyCodeLine #1->\hangpara 
+                            {\DoxyCodeWidth }{1}{#1}\par 
+l.59 \DoxyCodeLine{   }
+                       
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.59 \DoxyCodeLine{   }
+                       
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.59 \DoxyCodeLine{   }
+                       
+? 
+! Undefined control sequence.
+\DoxyCodeLine #1->\hangpara 
+                            {\DoxyCodeWidth }{1}{#1}\par 
+l.60 ...f} (cond == \textcolor{keyword}{false} ||}
+                                                  
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.60 ...f} (cond == \textcolor{keyword}{false} ||}
+                                                  
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.60 ...f} (cond == \textcolor{keyword}{false} ||}
+                                                  
+? 
+! Undefined control sequence.
+\DoxyCodeLine #1->\hangpara 
+                            {\DoxyCodeWidth }{1}{#1}\par 
+l.61 ...      cond2 == \textcolor{keyword}{true})}
+                                                  
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.61 ...      cond2 == \textcolor{keyword}{true})}
+                                                  
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.61 ...      cond2 == \textcolor{keyword}{true})}
+                                                  
+? 
+! Undefined control sequence.
+\DoxyCodeLine #1->\hangpara 
+                            {\DoxyCodeWidth }{1}{#1}\par 
+l.62 \DoxyCodeLine{        \{}
+                              
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.62 \DoxyCodeLine{        \{}
+                              
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.62 \DoxyCodeLine{        \{}
+                              
+? 
+! Undefined control sequence.
+\DoxyCodeLine #1->\hangpara 
+                            {\DoxyCodeWidth }{1}{#1}\par 
+l.63 \DoxyCodeLine{   }
+                       
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.63 \DoxyCodeLine{   }
+                       
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.63 \DoxyCodeLine{   }
+                       
+? 
+! Undefined control sequence.
+\DoxyCodeLine #1->\hangpara 
+                            {\DoxyCodeWidth }{1}{#1}\par 
+l.64 \DoxyCodeLine{        \}}
+                              
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.64 \DoxyCodeLine{        \}}
+                              
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.64 \DoxyCodeLine{        \}}
+                              
+? 
+! Undefined control sequence.
+\DoxyCodeLine #1->\hangpara 
+                            {\DoxyCodeWidth }{1}{#1}\par 
+l.65 \DoxyCodeLine{    \}}
+                          
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.65 \DoxyCodeLine{    \}}
+                          
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.65 \DoxyCodeLine{    \}}
+                          
+? 
+! Undefined control sequence.
+\DoxyCodeLine #1->\hangpara 
+                            {\DoxyCodeWidth }{1}{#1}\par 
+l.66 ...0, \textcolor{keywordtype}{int} n = 1) \{}
+                                                  
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.66 ...0, \textcolor{keywordtype}{int} n = 1) \{}
+                                                  
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.66 ...0, \textcolor{keywordtype}{int} n = 1) \{}
+                                                  
+? 
+! Undefined control sequence.
+\DoxyCodeLine #1->\hangpara 
+                            {\DoxyCodeWidth }{1}{#1}\par 
+l.67 ...    \textcolor{keywordtype}{int} var = 0;}
+                                                  
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.67 ...    \textcolor{keywordtype}{int} var = 0;}
+                                                  
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.67 ...    \textcolor{keywordtype}{int} var = 0;}
+                                                  
+? 
+! Undefined control sequence.
+\DoxyCodeLine #1->\hangpara 
+                            {\DoxyCodeWidth }{1}{#1}\par 
+l.68 \DoxyCodeLine{ }
+                     
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.68 \DoxyCodeLine{ }
+                     
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.68 \DoxyCodeLine{ }
+                     
+? 
+! Undefined control sequence.
+\DoxyCodeLine #1->\hangpara 
+                            {\DoxyCodeWidth }{1}{#1}\par 
+l.69 ...f} (cond == \textcolor{keyword}{false} ||}
+                                                  
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.69 ...f} (cond == \textcolor{keyword}{false} ||}
+                                                  
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.69 ...f} (cond == \textcolor{keyword}{false} ||}
+                                                  
+? 
+! Undefined control sequence.
+\DoxyCodeLine #1->\hangpara 
+                            {\DoxyCodeWidth }{1}{#1}\par 
+l.70 ...      cond2 == \textcolor{keyword}{true})}
+                                                  
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.70 ...      cond2 == \textcolor{keyword}{true})}
+                                                  
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.70 ...      cond2 == \textcolor{keyword}{true})}
+                                                  
+? 
+! Undefined control sequence.
+\DoxyCodeLine #1->\hangpara 
+                            {\DoxyCodeWidth }{1}{#1}\par 
+l.71 \DoxyCodeLine{    \{}
+                          
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.71 \DoxyCodeLine{    \{}
+                          
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.71 \DoxyCodeLine{    \{}
+                          
+? 
+! Undefined control sequence.
+\DoxyCodeLine #1->\hangpara 
+                            {\DoxyCodeWidth }{1}{#1}\par 
+l.72 \DoxyCodeLine{ }
+                     
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.72 \DoxyCodeLine{ }
+                     
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.72 \DoxyCodeLine{ }
+                     
+? 
+! Undefined control sequence.
+\DoxyCodeLine #1->\hangpara 
+                            {\DoxyCodeWidth }{1}{#1}\par 
+l.73 \DoxyCodeLine{    \}}
+                          
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.73 \DoxyCodeLine{    \}}
+                          
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.73 \DoxyCodeLine{    \}}
+                          
+? 
+! Undefined control sequence.
+\DoxyCodeLine #1->\hangpara 
+                            {\DoxyCodeWidth }{1}{#1}\par 
+l.74 \DoxyCodeLine{\}}
+                      
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.74 \DoxyCodeLine{\}}
+                      
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.74 \DoxyCodeLine{\}}
+                      
+? 
+
+Underfull \hbox (badness 10000) detected at line 79
+[][][]
+ []
+
+
+! LaTeX Error: Environment varwidth undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.103 \end{DoxyParams}
+                      
+
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   \let 
+l.103 \end{DoxyParams}
+                      
+
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \let 
+l.103 \end{DoxyParams}
+                      
+
+? 
+! Undefined control sequence.
+\@startpbox ...u@FV@ListProcessLine \narrowragged 
+                                                  \arraybackslash \parfillsk...
+l.103 \end{DoxyParams}
+                      
+
+? 
+
+! LaTeX Error: \begin{longtabu*} on input line 98 ended by \end{varwidth}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.103 \end{DoxyParams}
+                      
+
+? 
+
+! LaTeX Error: Environment varwidth undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.103 \end{DoxyParams}
+                      
+
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   \let 
+l.103 \end{DoxyParams}
+                      
+
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \let 
+l.103 \end{DoxyParams}
+                      
+
+? 
+! Undefined control sequence.
+\@startpbox ...u@FV@ListProcessLine \narrowragged 
+                                                  \arraybackslash \parfillsk...
+l.103 \end{DoxyParams}
+                      
+
+? 
+
+! LaTeX Error: \begin{longtabu*} on input line 98 ended by \end{varwidth}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.103 \end{DoxyParams}
+                      
+
+? 
+
+! LaTeX Error: Environment varwidth undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.103 \end{DoxyParams}
+                      
+
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   \let 
+l.103 \end{DoxyParams}
+                      
+
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \let 
+l.103 \end{DoxyParams}
+                      
+
+? 
+! Undefined control sequence.
+\@startpbox ...u@FV@ListProcessLine \narrowragged 
+                                                  \arraybackslash \parfillsk...
+l.103 \end{DoxyParams}
+                      
+
+? 
+
+! LaTeX Error: \begin{longtabu*} on input line 98 ended by \end{varwidth}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.103 \end{DoxyParams}
+                      
+
+? 
+
+! LaTeX Error: Environment varwidth undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.103 \end{DoxyParams}
+                      
+
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   \let 
+l.103 \end{DoxyParams}
+                      
+
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \let 
+l.103 \end{DoxyParams}
+                      
+
+? 
+! Undefined control sequence.
+\@startpbox ...u@FV@ListProcessLine \narrowragged 
+                                                  \arraybackslash \parfillsk...
+l.103 \end{DoxyParams}
+                      
+
+? 
+
+! LaTeX Error: \begin{longtabu*} on input line 98 ended by \end{varwidth}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.103 \end{DoxyParams}
+                      
+
+? 
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 8.2 on input line 103.
+
+[18]
+Underfull \hbox (badness 10000) detected at line 104
+[][][]
+ []
+
+! Undefined control sequence.
+\DoxyCodeLine #1->\hangpara 
+                            {\DoxyCodeWidth }{1}{#1}\par 
+l.113 ...ne{\textcolor{keywordtype}{int} var = 0;}
+                                                  
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.113 ...ne{\textcolor{keywordtype}{int} var = 0;}
+                                                  
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.113 ...ne{\textcolor{keywordtype}{int} var = 0;}
+                                                  
+? 
+
+Underfull \hbox (badness 10000) detected at line 126
+[][][]
+ []
+
+! Undefined control sequence.
+\DoxyCodeLine #1->\hangpara 
+                            {\DoxyCodeWidth }{1}{#1}\par 
+l.129 ...x{\hyperlink{class_bruch}{Bruch}}\& b)\{}
+                                                  
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.129 ...x{\hyperlink{class_bruch}{Bruch}}\& b)\{}
+                                                  
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.129 ...x{\hyperlink{class_bruch}{Bruch}}\& b)\{}
+                                                  
+? 
+! Undefined control sequence.
+\DoxyCodeLine #1->\hangpara 
+                            {\DoxyCodeWidth }{1}{#1}\par 
+l.130 ...  \textcolor{keywordtype}{float} b = 12;}
+                                                  
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.130 ...  \textcolor{keywordtype}{float} b = 12;}
+                                                  
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.130 ...  \textcolor{keywordtype}{float} b = 12;}
+                                                  
+? 
+! Undefined control sequence.
+\DoxyCodeLine #1->\hangpara 
+                            {\DoxyCodeWidth }{1}{#1}\par 
+l.131 ...flow}{return} \textcolor{keyword}{true};}
+                                                  
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.131 ...flow}{return} \textcolor{keyword}{true};}
+                                                  
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.131 ...flow}{return} \textcolor{keyword}{true};}
+                                                  
+? 
+! Undefined control sequence.
+\DoxyCodeLine #1->\hangpara 
+                            {\DoxyCodeWidth }{1}{#1}\par 
+l.132 \DoxyCodeLine{\}}
+                       
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.132 \DoxyCodeLine{\}}
+                       
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.132 \DoxyCodeLine{\}}
+                       
+? 
+) (./class_test.tex [19]
+
+! LaTeX Error: Environment varwidth undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 \end{DoxyParams}
+                     
+
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   \let 
+l.52 \end{DoxyParams}
+                     
+
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \let 
+l.52 \end{DoxyParams}
+                     
+
+? 
+! Undefined control sequence.
+\@startpbox ...u@FV@ListProcessLine \narrowragged 
+                                                  \arraybackslash \parfillsk...
+l.52 \end{DoxyParams}
+                     
+
+? 
+
+! LaTeX Error: \begin{longtabu*} on input line 43 ended by \end{varwidth}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 \end{DoxyParams}
+                     
+
+? 
+
+! LaTeX Error: Environment varwidth undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 \end{DoxyParams}
+                     
+
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   \let 
+l.52 \end{DoxyParams}
+                     
+
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \let 
+l.52 \end{DoxyParams}
+                     
+
+? 
+! Undefined control sequence.
+\@startpbox ...u@FV@ListProcessLine \narrowragged 
+                                                  \arraybackslash \parfillsk...
+l.52 \end{DoxyParams}
+                     
+
+? 
+
+! LaTeX Error: \begin{longtabu*} on input line 43 ended by \end{varwidth}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 \end{DoxyParams}
+                     
+
+? 
+
+! LaTeX Error: Environment varwidth undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 \end{DoxyParams}
+                     
+
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   \let 
+l.52 \end{DoxyParams}
+                     
+
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \let 
+l.52 \end{DoxyParams}
+                     
+
+? 
+! Undefined control sequence.
+\@startpbox ...u@FV@ListProcessLine \narrowragged 
+                                                  \arraybackslash \parfillsk...
+l.52 \end{DoxyParams}
+                     
+
+? 
+
+! LaTeX Error: \begin{longtabu*} on input line 43 ended by \end{varwidth}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 \end{DoxyParams}
+                     
+
+? 
+
+! LaTeX Error: Environment varwidth undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 \end{DoxyParams}
+                     
+
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   \let 
+l.52 \end{DoxyParams}
+                     
+
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \let 
+l.52 \end{DoxyParams}
+                     
+
+? 
+! Undefined control sequence.
+\@startpbox ...u@FV@ListProcessLine \narrowragged 
+                                                  \arraybackslash \parfillsk...
+l.52 \end{DoxyParams}
+                     
+
+? 
+
+! LaTeX Error: \begin{longtabu*} on input line 43 ended by \end{varwidth}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 \end{DoxyParams}
+                     
+
+? 
+
+! LaTeX Error: Environment varwidth undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 \end{DoxyParams}
+                     
+
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   \let 
+l.52 \end{DoxyParams}
+                     
+
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \let 
+l.52 \end{DoxyParams}
+                     
+
+? 
+! Undefined control sequence.
+\@startpbox ...u@FV@ListProcessLine \narrowragged 
+                                                  \arraybackslash \parfillsk...
+l.52 \end{DoxyParams}
+                     
+
+? 
+
+! LaTeX Error: \begin{longtabu*} on input line 43 ended by \end{varwidth}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 \end{DoxyParams}
+                     
+
+? 
+
+! LaTeX Error: Environment varwidth undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 \end{DoxyParams}
+                     
+
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   \let 
+l.52 \end{DoxyParams}
+                     
+
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \let 
+l.52 \end{DoxyParams}
+                     
+
+? 
+! Undefined control sequence.
+\@startpbox ...u@FV@ListProcessLine \narrowragged 
+                                                  \arraybackslash \parfillsk...
+l.52 \end{DoxyParams}
+                     
+
+? 
+
+! LaTeX Error: \begin{longtabu*} on input line 43 ended by \end{varwidth}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 \end{DoxyParams}
+                     
+
+? 
+
+! LaTeX Error: Environment varwidth undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 \end{DoxyParams}
+                     
+
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   \let 
+l.52 \end{DoxyParams}
+                     
+
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \let 
+l.52 \end{DoxyParams}
+                     
+
+? 
+! Undefined control sequence.
+\@startpbox ...u@FV@ListProcessLine \narrowragged 
+                                                  \arraybackslash \parfillsk...
+l.52 \end{DoxyParams}
+                     
+
+? 
+
+! LaTeX Error: \begin{longtabu*} on input line 43 ended by \end{varwidth}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 \end{DoxyParams}
+                     
+
+? 
+
+! LaTeX Error: Environment varwidth undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 \end{DoxyParams}
+                     
+
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   \let 
+l.52 \end{DoxyParams}
+                     
+
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \let 
+l.52 \end{DoxyParams}
+                     
+
+? 
+! Undefined control sequence.
+\@startpbox ...u@FV@ListProcessLine \narrowragged 
+                                                  \arraybackslash \parfillsk...
+l.52 \end{DoxyParams}
+                     
+
+? 
+
+! LaTeX Error: \begin{longtabu*} on input line 43 ended by \end{varwidth}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 \end{DoxyParams}
+                     
+
+? 
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 8.3 on input line 52.
+
+) (./class_time.tex [20]
+
+! LaTeX Error: Environment varwidth undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 \end{DoxyParams}
+                     
+
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   \let 
+l.62 \end{DoxyParams}
+                     
+
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \let 
+l.62 \end{DoxyParams}
+                     
+
+? 
+! Undefined control sequence.
+\@startpbox ...u@FV@ListProcessLine \narrowragged 
+                                                  \arraybackslash \parfillsk...
+l.62 \end{DoxyParams}
+                     
+
+? 
+
+! LaTeX Error: \begin{longtabu*} on input line 55 ended by \end{varwidth}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 \end{DoxyParams}
+                     
+
+? 
+
+! LaTeX Error: Environment varwidth undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 \end{DoxyParams}
+                     
+
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   \let 
+l.62 \end{DoxyParams}
+                     
+
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \let 
+l.62 \end{DoxyParams}
+                     
+
+? 
+! Undefined control sequence.
+\@startpbox ...u@FV@ListProcessLine \narrowragged 
+                                                  \arraybackslash \parfillsk...
+l.62 \end{DoxyParams}
+                     
+
+? 
+
+! LaTeX Error: \begin{longtabu*} on input line 55 ended by \end{varwidth}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 \end{DoxyParams}
+                     
+
+? 
+
+! LaTeX Error: Environment varwidth undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 \end{DoxyParams}
+                     
+
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   \let 
+l.62 \end{DoxyParams}
+                     
+
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \let 
+l.62 \end{DoxyParams}
+                     
+
+? 
+! Undefined control sequence.
+\@startpbox ...u@FV@ListProcessLine \narrowragged 
+                                                  \arraybackslash \parfillsk...
+l.62 \end{DoxyParams}
+                     
+
+? 
+
+! LaTeX Error: \begin{longtabu*} on input line 55 ended by \end{varwidth}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 \end{DoxyParams}
+                     
+
+? 
+
+! LaTeX Error: Environment varwidth undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 \end{DoxyParams}
+                     
+
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   \let 
+l.62 \end{DoxyParams}
+                     
+
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \let 
+l.62 \end{DoxyParams}
+                     
+
+? 
+! Undefined control sequence.
+\@startpbox ...u@FV@ListProcessLine \narrowragged 
+                                                  \arraybackslash \parfillsk...
+l.62 \end{DoxyParams}
+                     
+
+? 
+
+! LaTeX Error: \begin{longtabu*} on input line 55 ended by \end{varwidth}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 \end{DoxyParams}
+                     
+
+? 
+
+! LaTeX Error: Environment varwidth undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 \end{DoxyParams}
+                     
+
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   \let 
+l.62 \end{DoxyParams}
+                     
+
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \let 
+l.62 \end{DoxyParams}
+                     
+
+? 
+! Undefined control sequence.
+\@startpbox ...u@FV@ListProcessLine \narrowragged 
+                                                  \arraybackslash \parfillsk...
+l.62 \end{DoxyParams}
+                     
+
+? 
+
+! LaTeX Error: \begin{longtabu*} on input line 55 ended by \end{varwidth}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 \end{DoxyParams}
+                     
+
+? 
+
+! LaTeX Error: Environment varwidth undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 \end{DoxyParams}
+                     
+
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   \let 
+l.62 \end{DoxyParams}
+                     
+
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \let 
+l.62 \end{DoxyParams}
+                     
+
+? 
+! Undefined control sequence.
+\@startpbox ...u@FV@ListProcessLine \narrowragged 
+                                                  \arraybackslash \parfillsk...
+l.62 \end{DoxyParams}
+                     
+
+? 
+
+! LaTeX Error: \begin{longtabu*} on input line 55 ended by \end{varwidth}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 \end{DoxyParams}
+                     
+
+? 
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 8.4 on input line 62.
+
+! Undefined control sequence.
+\DoxyCodeLine #1->\hangpara 
+                            {\DoxyCodeWidth }{1}{#1}\par 
+l.65 ...}(\textcolor{keywordtype}{int} var = 0)\{}
+                                                  
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.65 ...}(\textcolor{keywordtype}{int} var = 0)\{}
+                                                  
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.65 ...}(\textcolor{keywordtype}{int} var = 0)\{}
+                                                  
+? 
+! Undefined control sequence.
+\DoxyCodeLine #1->\hangpara 
+                            {\DoxyCodeWidth }{1}{#1}\par 
+l.66 \DoxyCodeLine{afh}
+                       
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.66 \DoxyCodeLine{afh}
+                       
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.66 \DoxyCodeLine{afh}
+                       
+? 
+! Undefined control sequence.
+\DoxyCodeLine #1->\hangpara 
+                            {\DoxyCodeWidth }{1}{#1}\par 
+l.67 \DoxyCodeLine{}
+                    
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.67 \DoxyCodeLine{}
+                    
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.67 \DoxyCodeLine{}
+                    
+? 
+! Undefined control sequence.
+\DoxyCodeLine #1->\hangpara 
+                            {\DoxyCodeWidth }{1}{#1}\par 
+l.68 \DoxyCodeLine{fas}
+                       
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.68 \DoxyCodeLine{fas}
+                       
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.68 \DoxyCodeLine{fas}
+                       
+? 
+! Undefined control sequence.
+\DoxyCodeLine #1->\hangpara 
+                            {\DoxyCodeWidth }{1}{#1}\par 
+l.69 \DoxyCodeLine{}
+                    
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.69 \DoxyCodeLine{}
+                    
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.69 \DoxyCodeLine{}
+                    
+? 
+! Undefined control sequence.
+\DoxyCodeLine #1->\hangpara 
+                            {\DoxyCodeWidth }{1}{#1}\par 
+l.70 \DoxyCodeLine{}
+                    
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.70 \DoxyCodeLine{}
+                    
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.70 \DoxyCodeLine{}
+                    
+? 
+! Undefined control sequence.
+\DoxyCodeLine #1->\hangpara 
+                            {\DoxyCodeWidth }{1}{#1}\par 
+l.71 \DoxyCodeLine{}
+                    
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.71 \DoxyCodeLine{}
+                    
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.71 \DoxyCodeLine{}
+                    
+? 
+! Undefined control sequence.
+\DoxyCodeLine #1->\hangpara 
+                            {\DoxyCodeWidth }{1}{#1}\par 
+l.72 \DoxyCodeLine{\}}
+                      
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.72 \DoxyCodeLine{\}}
+                      
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.72 \DoxyCodeLine{\}}
+                      
+? 
+! Undefined control sequence.
+\DoxyCodeLine #1->\hangpara 
+                            {\DoxyCodeWidth }{1}{#1}\par 
+l.83 ...}(\textcolor{keywordtype}{int} var = 0)\{}
+                                                  
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.83 ...}(\textcolor{keywordtype}{int} var = 0)\{}
+                                                  
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.83 ...}(\textcolor{keywordtype}{int} var = 0)\{}
+                                                  
+? 
+! Undefined control sequence.
+\DoxyCodeLine #1->\hangpara 
+                            {\DoxyCodeWidth }{1}{#1}\par 
+l.84 \DoxyCodeLine{afh}
+                       
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.84 \DoxyCodeLine{afh}
+                       
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.84 \DoxyCodeLine{afh}
+                       
+? 
+! Undefined control sequence.
+\DoxyCodeLine #1->\hangpara 
+                            {\DoxyCodeWidth }{1}{#1}\par 
+l.85 \DoxyCodeLine{}
+                    
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.85 \DoxyCodeLine{}
+                    
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.85 \DoxyCodeLine{}
+                    
+? 
+! Undefined control sequence.
+\DoxyCodeLine #1->\hangpara 
+                            {\DoxyCodeWidth }{1}{#1}\par 
+l.86 \DoxyCodeLine{fas}
+                       
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.86 \DoxyCodeLine{fas}
+                       
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.86 \DoxyCodeLine{fas}
+                       
+? 
+! Undefined control sequence.
+\DoxyCodeLine #1->\hangpara 
+                            {\DoxyCodeWidth }{1}{#1}\par 
+l.87 \DoxyCodeLine{}
+                    
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.87 \DoxyCodeLine{}
+                    
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.87 \DoxyCodeLine{}
+                    
+? 
+! Undefined control sequence.
+\DoxyCodeLine #1->\hangpara 
+                            {\DoxyCodeWidth }{1}{#1}\par 
+l.88 \DoxyCodeLine{}
+                    
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.88 \DoxyCodeLine{}
+                    
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.88 \DoxyCodeLine{}
+                    
+? 
+! Undefined control sequence.
+\DoxyCodeLine #1->\hangpara 
+                            {\DoxyCodeWidth }{1}{#1}\par 
+l.89 \DoxyCodeLine{}
+                    
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.89 \DoxyCodeLine{}
+                    
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.89 \DoxyCodeLine{}
+                    
+? 
+! Undefined control sequence.
+\DoxyCodeLine #1->\hangpara 
+                            {\DoxyCodeWidth }{1}{#1}\par 
+l.90 \DoxyCodeLine{\}}
+                      
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.90 \DoxyCodeLine{\}}
+                      
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.90 \DoxyCodeLine{\}}
+                      
+? 
+[21]
+Underfull \hbox (badness 10000) detected at line 106
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 119
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 132
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 145
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 158
+[][][]
+ []
+
+) [22] [23] [24
+
+]
+No file refman.ind.
+
+Package longtable Warning: Table widths have changed. Rerun LaTeX.
+
+(./refman.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `refman.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `refman.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  0BA67295F3468FBBA78B2442DCF38855;9929.
+ ) 
 Here is how much of TeX's memory you used:
- 1503 strings out of 480247
- 21809 string characters out of 5896152
- 309940 words of memory out of 5000000
- 19486 multiletter control sequences out of 15000+600000
- 469259 words of font info for 28 fonts, out of 8000000 for 9000
+ 14064 strings out of 480248
+ 223305 string characters out of 5896177
+ 526737 words of memory out of 5000000
+ 31763 multiletter control sequences out of 15000+600000
+ 506824 words of font info for 77 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 61i,0n,63p,219b,36s stack positions out of 5000i,500n,10000p,200000b,80000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 87i,15n,91p,651b,635s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on refman.dvi (30 pages, 80720 bytes).

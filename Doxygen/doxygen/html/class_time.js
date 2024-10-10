@@ -5,6 +5,7 @@ var class_time =
     [ "add_hours", "class_time.html#a455b516e7bdf9f54426f23e8dd0c45f3", null ],
     [ "add_minutes", "class_time.html#a8c5f02906d7f3bc1e681697435258c30", null ],
     [ "add_seconds", "class_time.html#a2ee2b300391089bbdc871d091ff44dfa", null ],
+    [ "check_time", "class_time.html#ac72f6139603723fffcfb8e2e5a1c3cb2", null ],
     [ "hour", "class_time.html#a3d35ed23593879841722a131f9a3eb1c", null ],
     [ "just_minutes", "class_time.html#ae455f9dc6a87b3d527461acd91850d3e", null ],
     [ "just_seconds", "class_time.html#a926ce47bd37a37f32020de38f4530ee9", null ],
