@@ -6,8 +6,7 @@ import hashing
 
 try:
     conn = mariadb.connect(
-        user = "root",
-        password = "Leon1212.",
+        user = "app_User",
         host = "localhost",
         database = "testDB"
     )
